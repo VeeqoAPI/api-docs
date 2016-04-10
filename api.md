@@ -32,9 +32,15 @@ curl --request GET \
 ```
 
 :[Order Resources](resources/orders.md)
+
 :[Product Resources](resources/products.md)
+
 :[Purchase Order Resources](resources/purchase_orders.md)
+
 :[Supplier Resources](resources/suppliers.md)
+
 :[Company Resources](resources/company.md)
+
 :[Warehouse Resources](resources/warehouses.md)
+
 :[Customer Resources](resources/customers.md)
