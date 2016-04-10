@@ -37,6 +37,11 @@ Resources related to the orders in the API.
 
 ### Create a New Order [POST]
 
++ Attributes
+    + channel_id (number, required) - Store ID
+    + deliver_to_id (number, required) - Customer's Shipping Address ID
+    + delivery_method_id (number, required) - See Delivery Method Resource
+
 + Request (application/json)
 
     + Headers
