@@ -8,6 +8,9 @@ clean:
 	@echo "Cleaning"
 	@rm -fr apiary.apib
 
+preview: apiary.apib
+	@apiary preview
+
 publish: apiary.apib
 	@echo "Uploading blueprint to Apiary"
 	@apiary publish --api-name=$(APIARY_API)
