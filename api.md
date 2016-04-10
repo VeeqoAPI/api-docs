@@ -44,3 +44,5 @@ curl --request GET \
 :[Warehouse Resources](resources/warehouses.md)
 
 :[Customer Resources](resources/customers.md)
+
+:[Store Resources](resources/stores.md)
