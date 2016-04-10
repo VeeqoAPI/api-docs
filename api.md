@@ -46,3 +46,5 @@ curl --request GET \
 :[Customer Resources](resources/customers.md)
 
 :[Store Resources](resources/stores.md)
+
+:[Delivery Method Resources](resources/delivery_methods.md)
