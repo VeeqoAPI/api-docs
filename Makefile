@@ -1,6 +1,6 @@
 APIARY_API := veeqo
 
-apiary.apib:
+apiary.apib: clean
 	@echo "Transcluding API Blueprint"
 	@hercule api.md -o apiary.apib
 
