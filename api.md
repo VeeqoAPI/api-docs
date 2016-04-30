@@ -21,9 +21,9 @@ Authentication is required for your apps in order for them to access data in Vee
 
 ### Get API credentials
 
-1. From your Veeqo app, click settings menu (wrench icon)
-2. Click **Users**
-3. Click on your user
+1. Login into your [Veeqo account](https://app.veeqo.com/login)
+2. Navigate to [Employees page](https://app.veeqo.com/employees)
+3. Click on your user or add new employee (easier to track application activity)
 4. Click **Create/Update API Key**
 
 Your API credentials will de displayed on screen. Treat them like you would
