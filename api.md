@@ -13,7 +13,7 @@ Use our API to access the world of ecommerce.
 
 2. Explore
     * Use the [API previewer](/#reference/orders) to see what each endpoint does
-    * Download some [code samples](/#introduction/samples)
+    * Download some [code samples](/#introduction/code-samples)
 
 ## Authentication
 
@@ -41,9 +41,20 @@ curl --request GET \
   --header 'x-api-key: YOUR API KEY HERE'
 ```
 
-## Samples
+## Code Samples
 
-TBA
+Learn from our examples.
+
+### Labels Downloader
+
+Sample application, written in Python, shows how to retrieve shipment lables
+from shipped Veeqo orders: https://github.com/VeeqoAPI/shipment-label-downloader
+
+### Products Catalog
+
+This example, written in PHP, illustrates how to build simple catalog
+displaying products from Veeqo account: https://github.com/VeeqoAPI/products-list
+
 
 :[Order Resources](resources/orders.md)
 
