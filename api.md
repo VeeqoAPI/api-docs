@@ -7,6 +7,8 @@ Use our API to access the world of ecommerce.
 
 ## Getting Started
 
+Follow the simple list below to get up and running with the Veeqo API.
+
 1. Get setup
     * Signup for a [free trial Veeqo account](http://www.veeqo.com/)
     * [Get API credentials](/#introduction/authentication) for your app
@@ -55,6 +57,20 @@ from shipped Veeqo orders: https://github.com/VeeqoAPI/shipment-label-downloader
 This example, written in PHP, illustrates how to build simple catalog
 displaying products from Veeqo account: https://github.com/VeeqoAPI/products-list
 
+## Support
+
+### Community resources
+
+You can find the Veeqo developer community on the following sites:
+
+* [Google+](https://plus.google.com/communities/106053163460449492137)
+* [API Documentation Issues](https://github.com/veeqoapi/api-docs/issues)
+
+### Contact us
+
+If you can't find an answer in the resources above you can contact [API support](http://info.veeqo.com/get-in-touch-with-us).
+They can help you with any problems, questions, or comments you have about the
+Veeqo Platform.
 
 :[Order Resources](resources/orders.md)
 
