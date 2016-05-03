@@ -68,7 +68,7 @@ You can find the Veeqo developer community on the following sites:
 
 ### Contact us
 
-If you can't find an answer in the resources above you can contact [API support](http://info.veeqo.com/get-in-touch-with-us).
+If you can't find an answer in the resources above you can contact [Veeqo Support](http://help.veeqo.com/).
 They can help you with any problems, questions, or comments you have about the
 Veeqo Platform.
 
