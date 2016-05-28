@@ -1,7 +1,7 @@
 FORMAT: 1A
 HOST: https://api.veeqo.com/
 
-# Veeqo API
+# Veeqo API (BETA)
 
 Use our API to access the world of ecommerce.
 
