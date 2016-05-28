@@ -7,6 +7,15 @@ documentation for the [Veeqo API][] on [Apiary][].
 
 ## Requirements
 
+* [Node.JS](https://nodejs.org/)
+* [Ruby])(https://www.ruby-lang.org/)
+
+## Install
+
+    make install
+
+Or install the following tools manually:
+
 * [Apiary CLI](https://help.apiary.io/tools/apiary-cli/) `gem install apiaryio`
 * [Hercule](https://github.com/jamesramsay/hercule) `npm i -g hercule`
 
