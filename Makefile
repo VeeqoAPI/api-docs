@@ -14,3 +14,7 @@ preview: apiary.apib
 publish: apiary.apib
 	@echo "Uploading blueprint to Apiary"
 	@apiary publish --api-name=$(APIARY_API)
+
+install:
+	@gem install apiaryio
+	@npm install -g hercule
