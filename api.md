@@ -89,3 +89,5 @@ Veeqo Platform.
 :[Store Resources](resources/stores.md)
 
 :[Delivery Method Resources](resources/delivery_methods.md)
+
+:[Shipment Resources](resources/shipments.md)
