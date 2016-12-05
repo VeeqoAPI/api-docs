@@ -29,8 +29,23 @@ Resources related to the products in the API.
 ### Create a New Product [POST]
 
 + Attributes
-    + title: `T-Shirt` (string)
-    + description (string)
+    + title: `T-Shirt` (string, required)
+    + description: `In many different sizes` (string)
+    + estimated_delivery: `3` (string)
+    + notes: `Delivered within 3 days` (string)
+    + product_brand_id (string) - ID of the Product Brand it belongs to
+    + product_variants_attributes
+        + title: `Medium` (string, required)
+        + price: `23.0` (number, required)
+        + sku_code: `MED` (string, required)
+        + weight_grams: `150` (number)
+        + upc_code: `23092390` (string)
+        + min_reorder_level: `2` (number)
+        + quantity_to_reorder: `5` (number)
+        + tax_rate: `0.2` (string)
+    + images_attributes
+        + src: `http://veeqo.com/t-shirt.jpg` (string) - URL to the image of the product
+        + display_position: `1` (number)
 
 + Request (application/json)
 
@@ -68,7 +83,16 @@ Resources related to the products in the API.
                             "upc_code": ""
                         }
                     ],
-                    "title": "T-Shirt"
+                    "images_attributes": [
+                        {
+                            "src": "http://veeqo.com/t-shirt.jpg",
+                            "display_position": "1"
+                        },
+                        {
+                            "src": "http://veeqo.com/t-shirt-2.jpg",
+                            "display_position": "2"
+                        }
+                    ]
                 }
             }
 
