@@ -53,7 +53,7 @@ Resources related to the customers in the API.
                         "address1": "221 High Street Lane",
                         "address2": ""
                         "city": "Swansea",
-                        "country" "GB",
+                        "country": "GB",
                         "zip": "SA1 1NW"
                     }
                 }
@@ -74,7 +74,7 @@ Resources related to the customers in the API.
                     "address1": "FooBar Lane",
                     "address2": ""
                     "city": "Swansea",
-                    "country" "GB",
+                    "country": "GB",
                     "zip": "SA1 1NW"
                 }
             }
