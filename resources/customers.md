@@ -51,7 +51,7 @@ Resources related to the customers in the API.
                         "last_name": "Doe",
                         "company": "FooBar Ltd",
                         "address1": "221 High Street Lane",
-                        "address2": ""
+                        "address2": "",
                         "city": "Swansea",
                         "country": "GB",
                         "zip": "SA1 1NW"
@@ -72,7 +72,7 @@ Resources related to the customers in the API.
                     "first_name": "Foo",
                     "last_name": "Bar",
                     "address1": "FooBar Lane",
-                    "address2": ""
+                    "address2": "",
                     "city": "Swansea",
                     "country": "GB",
                     "zip": "SA1 1NW"
