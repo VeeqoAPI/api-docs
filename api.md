@@ -68,9 +68,9 @@ You can find the Veeqo developer community on the following sites:
 
 ### Contact us
 
-If you can't find an answer in the resources above you can contact [Veeqo Support](http://help.veeqo.com/).
+If you can't find an answer in the resources above you can contact [Veeqo API Support](mailto:api-support@veeqo.com).
 They can help you with any problems, questions, or comments you have about the
-Veeqo Platform.
+Veeqo API.
 
 :[Order Resources](resources/orders.md)
 
