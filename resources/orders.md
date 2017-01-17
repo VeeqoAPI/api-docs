@@ -24,6 +24,7 @@ Resources related to the orders in the API.
             + `on_hold`
             + `cancelled`
             + `refunded`
+    + allocated_at: `3` (integer, optional) - Restrict results to orders allocated at a specific warehouse
 
 + Request (application/json)
 
