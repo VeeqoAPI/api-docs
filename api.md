@@ -74,6 +74,8 @@ Veeqo Platform.
 
 :[Order Resources](resources/orders.md)
 
+:[Allocaton Resources](resources/allocations.md)
+
 :[Product Resources](resources/products.md)
 
 :[Purchase Order Resources](resources/purchase_orders.md)
