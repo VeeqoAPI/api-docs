@@ -55,7 +55,6 @@ Resources related to the order tags in the API.
 
     + Headers
 
-            Location:http://app.veeqo.dev/orders/447452
             X-Request-Id:315d4b059982c66ba9150a552cca8ddc
 
     + Body
