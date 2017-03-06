@@ -95,3 +95,5 @@ Veeqo Platform.
 :[Shipment Resources](resources/shipments.md)
 
 :[Stock Entry Resources](resources/stock_entries.md)
+
+:[Tag Resources](resources/tags.md)
