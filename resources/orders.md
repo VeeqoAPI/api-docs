@@ -2,7 +2,7 @@
 
 Resources related to the orders in the API.
 
-## Order Collection [/orders{?since_id,created_at_min,updated_at_min,page_size,page,query,status}]
+## Order Collection [/orders{?since_id,created_at_min,updated_at_min,page_size,page,query,status,tags,allocated_at}]
 
 ### List All Orders [GET]
 
