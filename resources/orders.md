@@ -24,6 +24,7 @@ Resources related to the orders in the API.
             + `on_hold`
             + `cancelled`
             + `refunded`
+    + tags: `Give+your+tag+a+name` (string, optional) - Restrict results to orders with a tag of the name provided
     + allocated_at: `3` (integer, optional) - Restrict results to orders allocated at a specific warehouse
 
 + Request (application/json)
@@ -83,6 +84,11 @@ Resources related to the orders in the API.
                         "payment_type": "bank_transfer",
                         "reference_number": "123456789"
                     },
+                    "employee_notes_attributes": [
+                        {
+                            note: "Order has been received"
+                        }
+                    ],
                     "send_notification_email": false,
                     "total_discounts": 0,
                     "total_tax": 0
