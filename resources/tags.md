@@ -35,8 +35,8 @@ Resources related to the order tags in the API.
 ### Create a New Tag [POST]
 
 + Attributes
-    + colour (string, required) - Hex color code of the tag
-    + name (string, required) - Name of the tag
+    + colour: `#993366` (string, required) - Hex color code of the tag
+    + name: `Give me a name` (string, required) - Name of the tag
 
 + Request (application/json)
 
