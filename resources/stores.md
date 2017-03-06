@@ -43,7 +43,7 @@ Resources related to the stores in the API.
     + Body
 
             {
-                "id": 123
+                "id": 123,
                 "name": "Phone"
             }
 

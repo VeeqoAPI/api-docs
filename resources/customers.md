@@ -25,7 +25,7 @@ Resources related to the customers in the API.
 ### Create a Customer [POST]
 
 + Attributes
-    + email: `customer@example.com` (string, required) 
+    + email: `customer@example.com` (string, required)
     + phone: `01792 720740` (string)
     + mobile: `07329023903` (string)
     + billing_address_attributes:
@@ -88,7 +88,7 @@ Resources related to the customers in the API.
 
 + Response 200 (application/json)
 
-        { "id":123, email": "customer@example.com" }
+        { "id":123, "email": "customer@example.com" }
 
 ### Update Customer Detail [PUT]
 
@@ -110,7 +110,7 @@ Resources related to the customers in the API.
 
             {
                 "customer": {
-                    "email": "customer@example.com",
+                    "email": "customer@example.com"
                 }
             }
 

@@ -36,7 +36,7 @@ Resources related to the suppliers in the API.
     + Body
 
             {
-                "id": 123
+                "id": 123,
                 "name": "ACME"
             }
 

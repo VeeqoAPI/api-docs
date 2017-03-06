@@ -37,7 +37,7 @@ Resources related to the delivery methods in the API.
     + Body
 
             {
-                "id": 123
+                "id": 123,
                 "name": "Next Day Delivery"
             }
 
