@@ -48,8 +48,8 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
 
 + Attributes
     + shipment:
-        + tracking_number_attributes:
-            + tracking_number: `12345679ABC` (string) - Tracking number for the shipment (if applicable)
+        + tracking_number_attributes (object, optional) - Only required if you have a value for tracking_number
+            + tracking_number: `12345679ABC` (string, required) - Tracking number for the shipment (if applicable)
         + carrier_id: `3` (number, required) - Veeqo ID of the carrier for the shipment
         + notify_customer: `false` (boolean, required) - Whether to notify the buyer via email from Veeqo
         + update_remote_order: `false` (boolean, required) - Whether to update the remote store (if using an integrated solution such as Amazon)
@@ -61,8 +61,8 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
             {
                 "shipment": {
                     "tracking_number_attributes": {
-                        "tracking_number": "12345679ABC",
-                    }
+                        "tracking_number": "12345679ABC"
+                    },
                     "carrier_id": 3,
                     "notify_customer": false,
                     "update_remote_order": false
