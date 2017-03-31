@@ -12,10 +12,11 @@ To allocate stock to an order, the item must be added as a line item within that
     + order_id: `323498` (integer, required) - Order ID
 
 + Attributes
-    + warehouse_id: `5` (number, required) - Warehouse ID
-    + line_items_attributes (array, required)
-        + sellable_id: `1226615` (number, required) - Sellable ID
-        + quantity: `1` (number, required) - Amount allocated to that order
+    + allocation:
+        + warehouse_id: `5` (number, required) - Warehouse ID
+        + line_items_attributes (array, required)
+            + sellable_id: `1226615` (number, required) - Sellable ID
+            + quantity: `1` (number, required) - Amount allocated to that order
 
 + Request (application/json)
 
@@ -26,13 +27,15 @@ To allocate stock to an order, the item must be added as a line item within that
     + Body
 
             {
-                "warehouse_id": 5,
-                "line_items_attributes": [
-                    {
-                        "sellable_id": 1226615,
-                        "quantity": 1
-                    }
-                ]
+                "allocation": {
+                    "warehouse_id": 5,
+                    "line_items_attributes": [
+                        {
+                            "sellable_id": 1226615,
+                            "quantity": 1
+                        }
+                    ]
+                }
             }
 
 
