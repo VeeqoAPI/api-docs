@@ -40,9 +40,9 @@ Resources related to the orders in the API.
 ### Create a New Order [POST]
 
 + Attributes
-    + channel_id (number, required) - Store ID
-    + deliver_to_id (number, required) - Customer's Shipping Address ID
-    + delivery_method_id (number, required) - See Delivery Method Resource
+    + order: (Order Base)
+        + employee_notes_attributes (object, optional) - Internal notes attributes
+            + note: `Order has been received` (string, required) - Text for the note
 
 + Request (application/json)
 
@@ -54,6 +54,7 @@ Resources related to the orders in the API.
 
             {
                 "order": {
+                    "due_date": "02/03/2017",
                     "channel_id": "3525",
                     "customer_id": "516208",
                     "deliver_to_attributes": {
@@ -77,7 +78,7 @@ Resources related to the orders in the API.
                             "price_per_unit": 13.99,
                             "quantity": "1",
                             "sellable_id": 1226615,
-                            "tax_rate": 0
+                            "tax_rate": 0.2
                         }
                     ],
                     "payment_attributes": {
@@ -498,7 +499,7 @@ Resources related to the orders in the API.
                     "name": "Default delivery method",
                     "user_id": 1923
                 },
-                "due_date": null,
+                "due_date": "2017-03-02T00:00:00.000Z",
                 "employee_notes": [],
                 "fulfilled_by_amazon": false,
                 "id": 447452,
@@ -625,7 +626,7 @@ Resources related to the orders in the API.
                             "variant_property_specifics": [],
                             "weight": 0.0
                         },
-                        "tax_rate": 0.0,
+                        "tax_rate": 0.2,
                         "updated_at": "2016-04-06T12:25:40Z"
                     }
                 ],
@@ -665,6 +666,9 @@ Resources related to the orders in the API.
 + Parameters
     + order_id (integer) - ID of the Order
 
++ Attributes (Order Response Base)
+    + id: `323498` (number) - Order ID
+
 ### View an Order Detail [GET]
 
 + Response 200 (application/json)
@@ -672,6 +676,9 @@ Resources related to the orders in the API.
         { "number": "Inv #123" }
 
 ### Update Order Detail [PUT]
+
++ Attributes
+    + order: (Order Base)
 
 + Request (application/json)
 
@@ -682,3 +689,702 @@ Resources related to the orders in the API.
 ### Delete [DELETE]
 
 + Response 204
+
+# Data Structures
+
+## Order Base
++ channel_id: `3525` (number, required)
+
+    Store ID - See Store Resource
+
++ deliver_to_id: `1086864` (number, required)
+
+    Customer's Shipping Address ID - See Customer Resource
+
++ delivery_method_id: `92298` (number, required)
+
+    Delivery Method ID - See Delivery Method Resource
+
++ due_date: `02/03/2017` (string, optional)
+
+    Expected delivery date, appears in the order interface
+
++ total_discounts: `0` (number, optional)
+
+    Total discounts price for the overall order
+
++ deliver_to_attributes (object, optional) - Delivery Address Attributes
+
+    + address1: `294 Queenstown Road` (string, optional)
+
+        Address line 1
+
+    + address2: `Borough` (string, optional)
+
+        Address line 2
+
+    + city: `London` (string, optional)
+
+        City
+
+    + company: `Fashion Co` (string, optional)
+
+        Company
+
+    + country: `GB` (string, optional)
+
+        Country (ISO-3 code)
+
+    + customer_id: `516208` (number, required)
+
+        Customer's ID - See Customer Resource
+
+    + first_name: `Sky` (string, optional)
+
+        First name
+
+    + last_name: `Schonhuber` (string, optional)
+
+        Last name
+
+    + phone: `07734450718` (string, optional)
+
+        Phone number
+
+    + state: `London` (string, optional)
+
+        State
+
+    + zip: `S8 4LT` (string, optional)
+
+        ZIP code
+
++ line_items_attributes (array, required) - Line item attributes for the line items of the order
+
+    + (object)
+
+        + sellable_id: `1226615` (number, required)
+
+            Sellable ID of the line item - See Product Resource
+
+        + price_per_unit: `13.99` (number, required)
+
+            Price per each unit of the line item in company's local currency
+
+        + quantity: `1` (number, required)
+
+            Quantity of the line item
+
+        + tax_rate: `0.2` (number, optional)
+
+            Tax rate of the line item
+
++ payment_attributes (object, optional) - Payment attributes, if the order has a payment
+
+    + payment_type: `cash` (string, required)
+
+        Type of payment
+
+    + reference_number: `123456789` (string, optional)
+
+        A reference string to refer to that payment
+
+## Order Response Base
+
++ allocated_completely: `true` (boolean)
+
+    Whether the order has been allocated fully
+
++ allocations (array) - Allocations of the order
+
+    + (Allocation)
+
++ created_at: `2016-04-06T12:25:40Z` (string)
+
+    Creation date
+
++ line_items (array) - Line items of the order
+
+    + created_at: `2016-04-06T12:25:40Z` (string)
+
+        Creation Date
+
+    + id: `486254` (number)
+
+        Line Item ID
+
+    + quantity: `1` (number)
+
+        Quantity of line
+
+    + sellable (object) - Sellable of line item
+
+        + active_channels: `REPLACE THIS WITH STORES MODEL` (string)
+
+        + allocated_stock_level_at_all_warehouses: `2` (number)
+
+            Stock amount allocated to all warehouses
+
+        + available_stock_level_at_all_warehouses: `4` (number)
+
+            Stock amount available at all warehouses
+
+        + channel_sellables: `REPLACE THIS WITH CHANNEL SELLABLES MODEL` (string)
+
+        + cost_price: `4` (number)
+
+            Cost price amount
+
+        + created_at: `2016-03-21T11:42:56Z` (string)
+
+            Creation date
+
+        + created_by_id: `1923` (number)
+
+            Creator user ID
+
+        + full_title: `MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST] MEDIUM` (string)
+
+            Full title of the product and sellable combined
+
+        + id: `1226615` (number)
+
+            Sellable ID
+
+
+
+
+
+
+
+
+           {
+                "allocated_completely": true,
+
+                        "created_at": "2016-04-06T12:25:40Z",
+                        "id": 323498,
+                        "line_items": [
+                            {
+                                "created_at": "2016-04-06T12:25:40Z",
+                                "id": 486254,
+                                "quantity": 1,
+                                "sellable": {
+                                    "active_channels": [],
+                                    "allocated_stock_level_at_all_warehouses": 2,
+                                    "available_stock_level_at_all_warehouses": 4,
+                                    "channel_sellables": [],
+                                    "cost_price": 0.0,
+                                    "created_at": "2016-03-21T11:42:56Z",
+                                    "created_by_id": 1923,
+                                    "full_title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST] MEDIUM",
+                                    "id": 1226615,
+                                    "images": [],
+                                    "inventory": {
+                                        "allocated_stock_level_at_all_warehouses": 2,
+                                        "available_stock_level_at_all_warehouses": 4,
+                                        "incoming_stock_level_at_all_warehouses": 0,
+                                        "infinite": false,
+                                        "physical_stock_level_at_all_warehouses": 6
+                                    },
+                                    "margin": 100.0,
+                                    "measurement_attributes": {
+                                        "depth": 0.0,
+                                        "dimensions_unit": "cm",
+                                        "height": 0.0,
+                                        "id": 622133,
+                                        "width": 0.0
+                                    },
+                                    "min_reorder_level": 0,
+                                    "model_number": "",
+                                    "on_hand_value": 0.0,
+                                    "price": 13.99,
+                                    "product": {
+                                        "description": "",
+                                        "estimated_delivery": null,
+                                        "hs_tariff_number": null,
+                                        "id": 574313,
+                                        "main_image": {
+                                            "binary_data": null,
+                                            "content_type": null,
+                                            "created_at": "2016-03-21T11:42:56Z",
+                                            "created_by_id": null,
+                                            "deleted_at": null,
+                                            "deleted_by_id": null,
+                                            "display_position": null,
+                                            "id": 795405,
+                                            "picture_content_type": null,
+                                            "picture_file_name": null,
+                                            "picture_file_size": null,
+                                            "picture_order": 9999,
+                                            "picture_updated_at": null,
+                                            "product_id": 574313,
+                                            "src": "https://veeqo-production-storage.s3.amazonaws.com/images/2032154/fs004027-new_original.jpg",
+                                            "updated_at": "2016-03-21T11:42:56Z",
+                                            "updated_by_id": null
+                                        },
+                                        "main_image_src": "https://veeqo-production-storage.s3.amazonaws.com/images/2032154/fs004027-new_original.jpg",
+                                        "origin_country": null,
+                                        "tax_rate": 0,
+                                        "title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST]",
+                                        "weight": 0
+                                    },
+                                    "product_title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST]",
+                                    "profit": 13.99,
+                                    "quantity_to_reorder": 0,
+                                    "sellable_title": "MEDIUM",
+                                    "sku_code": "SUP-007",
+                                    "stock_entries": [
+                                        {
+                                            "allocated_stock_level": 2,
+                                            "available_stock_level": 4,
+                                            "id": 1209222,
+                                            "incoming_stock_level": 0,
+                                            "infinite": false,
+                                            "location": null,
+                                            "physical_stock_level": 6,
+                                            "sellable_id": 1226615,
+                                            "sellable_on_hand_value": 0.0,
+                                            "stock_running_low": false,
+                                            "updated_at": "2016-04-06T12:25:40Z",
+                                            "warehouse": {
+                                                "address_line_1": "",
+                                                "address_line_2": "",
+                                                "city": "",
+                                                "click_and_collect_days": null,
+                                                "click_and_collect_enabled": false,
+                                                "country": null,
+                                                "created_at": "2016-03-21T11:42:55Z",
+                                                "created_by_id": 1923,
+                                                "default_min_reorder": 0,
+                                                "deleted_at": null,
+                                                "deleted_by_id": null,
+                                                "id": 1784,
+                                                "inventory_type_code": "wavg",
+                                                "name": "My Warehouse",
+                                                "phone": null,
+                                                "post_code": "",
+                                                "region": "",
+                                                "requested_carrier_account": null,
+                                                "updated_at": "2016-03-21T11:42:55Z",
+                                                "updated_by_id": null,
+                                                "user_id": null
+                                            },
+                                            "warehouse_id": 1784
+                                        }
+                                    ],
+                                    "stock_level_at_all_warehouses": 6,
+                                    "tax_rate": 0.0,
+                                    "title": "MEDIUM",
+                                    "total_quantity_sold": 2,
+                                    "type": "ProductVariant",
+                                    "upc_code": "",
+                                    "updated_at": "2016-03-21T11:42:56Z",
+                                    "variant_option_specifics": [],
+                                    "variant_property_specifics": [],
+                                    "weight": 0.0
+                                },
+                                "updated_at": "2016-04-06T12:25:40Z"
+                            }
+                        ],
+                        "order_id": 447452,
+                        "recommended_shipping_options": null,
+                        "shipment": null,
+                        "total_weight": 0,
+                        "updated_at": "2016-04-06T12:25:40Z",
+                        "warehouse": {
+                            "address_line_1": "",
+                            "address_line_2": "",
+                            "city": "",
+                            "click_and_collect_days": null,
+                            "click_and_collect_enabled": false,
+                            "country": null,
+                            "created_at": "2016-03-21T11:42:55Z",
+                            "created_by_id": 1923,
+                            "default_min_reorder": 0,
+                            "deleted_at": null,
+                            "deleted_by_id": null,
+                            "id": 1784,
+                            "inventory_type_code": "wavg",
+                            "name": "My Warehouse",
+                            "phone": null,
+                            "post_code": "",
+                            "region": "",
+                            "requested_carrier_account": null,
+                            "updated_at": "2016-03-21T11:42:55Z",
+                            "updated_by_id": null,
+                            "user_id": null
+                        }
+                    }
+                ],
+                "buyer_user_id": null,
+                "cancel_reason": null,
+                "cancelled_at": null,
+                "cancelled_by": null,
+                "channel": {
+                    "active_warehouses": [
+                        {
+                            "id": 1784,
+                            "name": "My Warehouse"
+                        }
+                    ],
+                    "address_line_1": "",
+                    "address_line_2": "",
+                    "api2cart_store_key": null,
+                    "automatic_product_linking_disabled": false,
+                    "bridge_url": null,
+                    "bridge_verified": false,
+                    "channel_warehouses": [
+                        {
+                            "rank": 1,
+                            "warehouse": {
+                                "address_line_1": "",
+                                "address_line_2": "",
+                                "city": "",
+                                "click_and_collect_days": null,
+                                "click_and_collect_enabled": false,
+                                "country": null,
+                                "created_at": "2016-03-21T11:42:55Z",
+                                "created_by_id": 1923,
+                                "default_min_reorder": 0,
+                                "deleted_at": null,
+                                "deleted_by_id": null,
+                                "id": 1784,
+                                "inventory_type_code": "wavg",
+                                "name": "My Warehouse",
+                                "phone": null,
+                                "post_code": "",
+                                "region": "",
+                                "requested_carrier_account": null,
+                                "updated_at": "2016-03-21T11:42:55Z",
+                                "updated_by_id": null,
+                                "user_id": null
+                            }
+                        }
+                    ],
+                    "city": "",
+                    "country": null,
+                    "create_product_if_unmatched": true,
+                    "created_by_id": 1923,
+                    "default_send_shipment_email": true,
+                    "default_warehouse": {
+                        "address_line_1": "",
+                        "address_line_2": "",
+                        "city": "",
+                        "click_and_collect_days": null,
+                        "click_and_collect_enabled": false,
+                        "country": null,
+                        "created_at": "2016-03-21T11:42:55Z",
+                        "created_by_id": 1923,
+                        "default_min_reorder": 0,
+                        "deleted_at": null,
+                        "deleted_by_id": null,
+                        "id": 1784,
+                        "inventory_type_code": "wavg",
+                        "name": "My Warehouse",
+                        "phone": null,
+                        "post_code": "",
+                        "region": "",
+                        "requested_carrier_account": null,
+                        "updated_at": "2016-03-21T11:42:55Z",
+                        "updated_by_id": null,
+                        "user_id": null
+                    },
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "email": "dev01@bdhr.co",
+                    "id": 3525,
+                    "marketplace_id": null,
+                    "mws_auth_token": null,
+                    "name": "Phone",
+                    "pending_setup": true,
+                    "post_code": "",
+                    "pull_pending_orders": false,
+                    "pulled_orders_at": null,
+                    "pulled_products_at": null,
+                    "region": "",
+                    "remote": false,
+                    "seller_id": null,
+                    "shopify_url": null,
+                    "skip_title_matching": true,
+                    "state": "active",
+                    "stock_level_update_requests": [],
+                    "successfully_fetched_stock_levels_at": null,
+                    "type_code": "direct",
+                    "update_remote_order": true,
+                    "url": null
+                },
+                "created_at": "2016-04-06T12:25:40Z",
+                "created_by": {
+                    "company": {
+                        "billing_period_started": null,
+                        "card_valid": false,
+                        "created_at": "2016-03-21T11:42:55Z",
+                        "has_right_to_use_veeqo": true,
+                        "id": 1717,
+                        "name": "Dev01",
+                        "referring_website": "",
+                        "stripe_customer_id": null,
+                        "subscription_plan": {
+                            "billing_interval": "month",
+                            "id": 62,
+                            "name": "Business[Monthly]",
+                            "stripe_plan_id": "BUSINESS_MONTHLY_20160309"
+                        },
+                        "subscription_plan_id": 62,
+                        "subscription_status": "trialing",
+                        "updated_at": "2016-03-21T11:42:55Z"
+                    },
+                    "created_at": "2016-03-21T11:42:55Z",
+                    "email": "dev01@bdhr.co",
+                    "guide_completed_message_viewed": null,
+                    "id": 1923,
+                    "location": null,
+                    "login": "Dev01",
+                    "orders_walkthrough_viewed": false,
+                    "updated_at": "2016-04-01T09:46:12Z"
+                },
+                "customer": {
+                    "billing_address": {
+                        "address1": "294 queenstown road",
+                        "address2": null,
+                        "city": "london",
+                        "company": null,
+                        "country": "GB",
+                        "email": null,
+                        "first_name": "Sky",
+                        "id": 1086864,
+                        "last_name": "Schonhuber",
+                        "phone": "07734450718",
+                        "state": "london",
+                        "zip": "sw8 4lt"
+                    },
+                    "created_by_id": 1923,
+                    "email": "customer@example.com",
+                    "id": 516208,
+                    "mobile": null,
+                    "phone": "0207376109",
+                    "shipping_addresses": [
+                        {
+                            "address1": "294 queenstown road",
+                            "address2": null,
+                            "city": "london",
+                            "company": null,
+                            "country": "GB",
+                            "first_name": "Sky",
+                            "id": 1086865,
+                            "last_name": "Schonhuber",
+                            "phone": "07734450718",
+                            "state": "london",
+                            "zip": "sw8 4lt"
+                        },
+                        {
+                            "address1": "294 queenstown road",
+                            "address2": "",
+                            "city": "london",
+                            "company": "",
+                            "country": "GB",
+                            "first_name": "Sky",
+                            "id": 1086866,
+                            "last_name": "Schonhuber",
+                            "phone": "07734450718",
+                            "state": "london",
+                            "zip": "sw8 4lt"
+                        },
+                        {
+                            "address1": "294 queenstown road",
+                            "address2": "",
+                            "city": "london",
+                            "company": "",
+                            "country": "GB",
+                            "first_name": "Sky",
+                            "id": 1086867,
+                            "last_name": "Schonhuber",
+                            "phone": "07734450718",
+                            "state": "london",
+                            "zip": "sw8 4lt"
+                        }
+                    ]
+                },
+                "customer_note": null,
+                "customer_viewable_notes": null,
+                "deliver_to": {
+                    "address1": "294 queenstown road",
+                    "address2": "",
+                    "city": "london",
+                    "company": "",
+                    "country": "GB",
+                    "first_name": "Sky",
+                    "id": 1086867,
+                    "last_name": "Schonhuber",
+                    "phone": "07734450718",
+                    "state": "london",
+                    "zip": "sw8 4lt"
+                },
+                "delivery_cost": 0.0,
+                "delivery_method": {
+                    "cost": 0.0,
+                    "id": 92298,
+                    "name": "Default delivery method",
+                    "user_id": 1923
+                },
+                "due_date": "2017-03-02T00:00:00.000Z",
+                "employee_notes": [],
+                "fulfilled_by_amazon": false,
+                "id": 447452,
+                "international": false,
+                "line_items": [
+                    {
+                        "additional_options": null,
+                        "created_at": "2016-04-06T12:25:40Z",
+                        "id": 691572,
+                        "price_per_unit": 13.99,
+                        "quantity": 1,
+                        "sellable": {
+                            "active_channels": [],
+                            "allocated_stock_level_at_all_warehouses": 2,
+                            "available_stock_level_at_all_warehouses": 4,
+                            "channel_sellables": [],
+                            "cost_price": 0.0,
+                            "created_at": "2016-03-21T11:42:56Z",
+                            "created_by_id": 1923,
+                            "full_title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST] MEDIUM",
+                            "id": 1226615,
+                            "images": [],
+                            "inventory": {
+                                "allocated_stock_level_at_all_warehouses": 2,
+                                "available_stock_level_at_all_warehouses": 4,
+                                "incoming_stock_level_at_all_warehouses": 0,
+                                "infinite": false,
+                                "physical_stock_level_at_all_warehouses": 6
+                            },
+                            "margin": 100.0,
+                            "measurement_attributes": {
+                                "depth": 0.0,
+                                "dimensions_unit": "cm",
+                                "height": 0.0,
+                                "id": 622133,
+                                "width": 0.0
+                            },
+                            "min_reorder_level": 0,
+                            "model_number": "",
+                            "on_hand_value": 0.0,
+                            "price": 13.99,
+                            "product": {
+                                "description": "",
+                                "estimated_delivery": null,
+                                "hs_tariff_number": null,
+                                "id": 574313,
+                                "main_image": {
+                                    "binary_data": null,
+                                    "content_type": null,
+                                    "created_at": "2016-03-21T11:42:56Z",
+                                    "created_by_id": null,
+                                    "deleted_at": null,
+                                    "deleted_by_id": null,
+                                    "display_position": null,
+                                    "id": 795405,
+                                    "picture_content_type": null,
+                                    "picture_file_name": null,
+                                    "picture_file_size": null,
+                                    "picture_order": 9999,
+                                    "picture_updated_at": null,
+                                    "product_id": 574313,
+                                    "src": "https://veeqo-production-storage.s3.amazonaws.com/images/2032154/fs004027-new_original.jpg",
+                                    "updated_at": "2016-03-21T11:42:56Z",
+                                    "updated_by_id": null
+                                },
+                                "main_image_src": "https://veeqo-production-storage.s3.amazonaws.com/images/2032154/fs004027-new_original.jpg",
+                                "origin_country": null,
+                                "tax_rate": 0,
+                                "title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST]",
+                                "weight": 0
+                            },
+                            "product_title": "MEN'S SUPERMAN SHORT SLEEVE T-SHIRT [TEST]",
+                            "profit": 13.99,
+                            "quantity_to_reorder": 0,
+                            "sellable_title": "MEDIUM",
+                            "sku_code": "SUP-007",
+                            "stock_entries": [
+                                {
+                                    "allocated_stock_level": 2,
+                                    "available_stock_level": 4,
+                                    "id": 1209222,
+                                    "incoming_stock_level": 0,
+                                    "infinite": false,
+                                    "location": null,
+                                    "physical_stock_level": 6,
+                                    "sellable_id": 1226615,
+                                    "sellable_on_hand_value": 0.0,
+                                    "stock_running_low": false,
+                                    "updated_at": "2016-04-06T12:25:40Z",
+                                    "warehouse": {
+                                        "address_line_1": "",
+                                        "address_line_2": "",
+                                        "city": "",
+                                        "click_and_collect_days": null,
+                                        "click_and_collect_enabled": false,
+                                        "country": null,
+                                        "created_at": "2016-03-21T11:42:55Z",
+                                        "created_by_id": 1923,
+                                        "default_min_reorder": 0,
+                                        "deleted_at": null,
+                                        "deleted_by_id": null,
+                                        "id": 1784,
+                                        "inventory_type_code": "wavg",
+                                        "name": "My Warehouse",
+                                        "phone": null,
+                                        "post_code": "",
+                                        "region": "",
+                                        "requested_carrier_account": null,
+                                        "updated_at": "2016-03-21T11:42:55Z",
+                                        "updated_by_id": null,
+                                        "user_id": null
+                                    },
+                                    "warehouse_id": 1784
+                                }
+                            ],
+                            "stock_level_at_all_warehouses": 6,
+                            "tax_rate": 0.0,
+                            "title": "MEDIUM",
+                            "total_quantity_sold": 2,
+                            "type": "ProductVariant",
+                            "upc_code": "",
+                            "updated_at": "2016-03-21T11:42:56Z",
+                            "variant_option_specifics": [],
+                            "variant_property_specifics": [],
+                            "weight": 0.0
+                        },
+                        "tax_rate": 0.2,
+                        "updated_at": "2016-04-06T12:25:40Z"
+                    }
+                ],
+                "notes": null,
+                "number": "#P-447452",
+                "packed_completely": null,
+                "payment": {
+                    "card_number": null,
+                    "created_at": "2016-04-06T12:25:40Z",
+                    "created_by_id": 1923,
+                    "id": 415007,
+                    "order_id": 447452,
+                    "payment_type": "bank_transfer",
+                    "reference_number": "123456789",
+                    "updated_at": "2016-04-06T12:25:40Z"
+                },
+                "picked_completely": null,
+                "receipt_printed": false,
+                "refund_amount": null,
+                "returns": [],
+                "send_notification_email": false,
+                "send_refund_email": null,
+                "shipped_at": null,
+                "status": "awaiting_fulfillment",
+                "subtotal_price": 13.99,
+                "tags": [],
+                "till_id": null,
+                "total_discounts": 0.0,
+                "total_price": 13.99,
+                "total_tax": 0.0,
+                "updated_at": "2016-04-06T12:25:40Z",
+                "updated_by": null
+            }

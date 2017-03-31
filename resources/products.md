@@ -24,28 +24,38 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
 
+    + Attributes
+
+        (array)
+            + (Product)
+
+    + Body
+
         [{"id": 123}]
 
 ### Create a New Product [POST]
 
 + Attributes
-    + title: `T-Shirt` (string, required)
-    + description: `In many different sizes` (string)
-    + estimated_delivery: `3` (string)
-    + notes: `Delivered within 3 days` (string)
-    + product_brand_id (string) - ID of the Product Brand it belongs to
-    + product_variants_attributes
-        + title: `Medium` (string, required)
-        + price: `23.0` (number, required)
-        + sku_code: `MED` (string, required)
-        + weight_grams: `150` (number)
-        + upc_code: `23092390` (string)
-        + min_reorder_level: `2` (number)
-        + quantity_to_reorder: `5` (number)
-        + tax_rate: `0.2` (string)
-    + images_attributes
-        + src: `http://veeqo.com/t-shirt.jpg` (string) - URL to the image of the product
-        + display_position: `1` (number)
+    + product (object)
+        + title: `T-Shirt` (string, required)
+        + description: `In many different sizes` (string, optional)
+        + estimated_delivery: `3` (string, optional)
+        + notes: `Delivered within 3 days` (string, optional)
+        + product_brand_id (string, optional) - ID of the Product Brand it belongs to
+        + product_variants_attributes - (array, required)
+            + (object)
+                + title: `Medium` (string, required)
+                + price: `23.0` (number, required)
+                + sku_code: `MED` (string, required)
+                + weight_grams: `150` (number, optional)
+                + upc_code: `23092390` (string, optional)
+                + min_reorder_level: `2` (number, optional)
+                + quantity_to_reorder: `5` (number, optional)
+                + tax_rate: `0.2` (string, optional)
+        + images_attributes (array, optional)
+            + (object)
+                + src: `http://veeqo.com/t-shirt.jpg` (string, optional) - URL to the image of the product
+                + display_position: `1` (number, optional)
 
 + Request (application/json)
 
@@ -240,6 +250,19 @@ Resources related to the products in the API.
 
 ## Product [/products/{product_id}]
 
++ Attributes
+    + id: `1` (number) - Product ID
+    + active_channels (array) - Channels enabled on product
+    + brand: (ProductBrandExample Base) - Product brand
+    + channel_products: (object) - Channel products enabled on product
+    + created_at: `2016-04-06T12:54:15Z` (string) - Creation date
+    + created_by_id: `1923` (number) - Created by  user id
+    + deleted_at (string) - Deletion date
+    + deleted_by_id (number) - Deleted by user id
+    + description: `In many different sizes` (string) - Product description
+    + estimated_delivery: `3` (number) - Estimated delivery time in days
+    + notes: `Delivered within 3 days` (string) - Notes on the product
+
 + Parameters
     + product_id: `574316` (integer) - ID of the Product
 
@@ -247,12 +270,41 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
 
+    Attributes
+
+        + (Product)
+
+    + Body
+
         {
             "id": 123,
             "title": "T-Shirt"
         }
 
 ### Update Product Detail [PUT]
+
++ Attributes
+
+    + product (object)
+        + title: `T-Shirt` (string, required)
+        + description: `In many different sizes` (string, optional)
+        + estimated_delivery: `3` (string, optional)
+        + notes: `Delivered within 3 days` (string, optional)
+        + product_brand_id (string, optional) - ID of the Product Brand it belongs to
+        + product_variants_attributes - (array, required)
+            + (object)
+                + title: `Medium` (string, required)
+                + price: `23.0` (number, required)
+                + sku_code: `MED` (string, required)
+                + weight_grams: `150` (number, optional)
+                + upc_code: `23092390` (string, optional)
+                + min_reorder_level: `2` (number, optional)
+                + quantity_to_reorder: `5` (number, optional)
+                + tax_rate: `0.2` (string, optional)
+        + images_attributes (array, optional)
+            + (object)
+                + src: `http://veeqo.com/t-shirt.jpg` (string, optional) - URL to the image of the product
+                + display_position: `1` (number, optional)
 
 + Request (application/json)
 

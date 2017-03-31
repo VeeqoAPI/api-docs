@@ -99,3 +99,22 @@ Veeqo Platform.
 :[Stock Entry Resources](resources/stock_entries.md)
 
 :[Tag Resources](resources/tags.md)
+
+## Data Resources
+
+## ProductBrandExample Base (object, required)
++ id: `1` (number, required)
+
+  Brand ID
+
++ name: `Apple` (string, required)
+
+  Brand Name
+
++ display_position: `1` (number, required)
+
+  Display order
+
++ products_count: `52` (number, optional)
+
+    Count of products assigned to

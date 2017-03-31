@@ -9,10 +9,15 @@ Resources related to the order tags in the API.
 + Request (application/json)
 
     + Headers
-
-            x-api-key: 123
+        x-api-key: 123
 
 + Response 200 (application/json)
+
+    + Attributes
+        + (array)
+            + (Tag)
+
+    + Body
 
         [
             {
@@ -35,14 +40,13 @@ Resources related to the order tags in the API.
 ### Create a New Tag [POST]
 
 + Attributes
-    + colour: `#993366` (string, required) - Hex color code of the tag
-    + name: `Give me a name` (string, required) - Name of the tag
+    + tag: (Tag Base, required)
 
 + Request (application/json)
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
     + Body
 
@@ -53,9 +57,7 @@ Resources related to the order tags in the API.
 
 + Response 201 (application/json)
 
-    + Headers
-
-            X-Request-Id:315d4b059982c66ba9150a552cca8ddc
+    + Attributes (Tag)
 
     + Body
 
@@ -72,9 +74,18 @@ Resources related to the order tags in the API.
 + Parameters
     + tag_id (integer, required) - ID of the Tag
 
++ Attributes (Tag Base)
+    + id: `11159` (number) - Tag ID
+    + company_id: `1422` (number) - Company ID tag belongs to
+    + taggings_count: `0` (number) - Number of orders the tag is attached to
+
 ### View an Tag Detail [GET]
 
 + Response 200 (application/json)
+
+    + Attributes (Tag)
+
+    + Body
 
         {
             "colour": "#993366",
@@ -87,3 +98,14 @@ Resources related to the order tags in the API.
 ### Delete [DELETE]
 
 + Response 204
+
+# Data Structures
+
+## Tag Base (object)
++ colour: `#993366` (string)
+
+    Hex code of the color
+
++ name: `Give me a name` (string)
+
+    Name of the tag

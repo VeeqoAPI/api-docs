@@ -47,9 +47,9 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
 ### Create a Shipment [POST]
 
 + Attributes
-    + shipment:
-        + tracking_number_attributes (object, optional) - Only required if you have a value for tracking_number
-            + tracking_number: `12345679ABC` (string, required) - Tracking number for the shipment (if applicable)
+    + shipment: (object, required)
+        + tracking_number_attributes: (object, optional)
+            + tracking_number: `12345679ABC` (string, optional) - Tracking number for the shipment (if applicable)
         + carrier_id: `3` (number, required) - Veeqo ID of the carrier for the shipment
         + notify_customer: `false` (boolean, required) - Whether to notify the buyer via email from Veeqo
         + update_remote_order: `false` (boolean, required) - Whether to update the remote store (if using an integrated solution such as Amazon)
@@ -72,6 +72,8 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
             }
 
 + Response 201 (application/json)
+
+    + Attributes (Shipment)
 
     + Body
 
@@ -96,6 +98,23 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
             }
 
 ## Shipment [/shipments/{id}]
+
++ Attributes
+    + id: `3` (number) - Shipment ID
+    + created_at: `2016-11-14T15:05:35.709Z` (string) - Shipment creation date
+    + allocation_id: `1` (number) - Shipment's allocation ID (See Allocations resource)
+    + carrier_id: `3` (number) - Carrier ID
+    + shipped_by_id: `1402` (number) - Shipper user ID
+    + weight: `20` (number) - Weight of shipment (in grams)
+    + notify_customer: `false` (boolean) - Whether buyer was notified of the shipment
+    + update_remote_order: `false` (boolean) - Whether the shipment was pushed to the store by the user
+    + tracking_number (object) - Tracking number attributes
+        + id: `12618396` (number) - Tracking Number ID
+        + tracking_number: `12345679ABC` (string) - Tracking Number value
+    + order_id: `5753042` (number) - Shipment's Order ID
+    + carrier: (object) - Carrier attributes
+        + id: `3` (number) - Carrier ID
+        + name: `Other` (string) - Carrier name
 
 + Parameters
     + id (integer)

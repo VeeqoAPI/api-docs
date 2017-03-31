@@ -26,7 +26,7 @@ Resources related to the stores in the API.
 
 + Attributes
     + name: `Phone` (string, required)
-    + type_code: `direct` (enum[string], required)
+    + type_code: `direct` (string, required)
         + Members
             + `direct`
             + `retail`
@@ -59,6 +59,13 @@ Resources related to the stores in the API.
         { "name": "Phone" }
 
 ### Update Store Detail [PUT]
+
++ Attributes
+    + name: `Phone` (string, required)
+    + type_code: `direct` (string, required)
+        + Members
+            + `direct`
+            + `retail`
 
 + Request (application/json)
 
