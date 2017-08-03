@@ -3,14 +3,19 @@ HOST: https://api.veeqo.com/
 
 # Veeqo API (BETA)
 
-Use our API to access the world of ecommerce.
+Everything you need to build the world's most powerful tools for ecommerce retailers.
+
+## [Developer Page](https://developer.veeqo.com)
+
+We're working hard at Veeqo to make developing on top of our API the best experience possible. 
+The [Developer Page](https://developer.veeqo.com) has access to all of the resources you'll need.
 
 ## Getting Started
 
 Follow the simple list below to get up and running with the Veeqo API.
 
 1. Get setup
-    * Signup for a [free trial Veeqo account](http://www.veeqo.com/)
+    * Signup for a [free trial Veeqo account](http://www.veeqo.com/signup)
     * [Get API credentials](/#introduction/authentication) for your app
 
 2. Explore
@@ -20,6 +25,9 @@ Follow the simple list below to get up and running with the Veeqo API.
 ## Authentication
 
 Authentication is required for your apps in order for them to access data in Veeqo.
+
+Authentication is going to improve very soon with the addition of OAuth. We'll post 
+on the forum and update the docs when that goes live. 
 
 ### Get API credentials
 
@@ -47,30 +55,37 @@ curl --request GET \
 
 Learn from our examples.
 
-### Labels Downloader
+All of our examples live on the VeeqoAPI git hub page. We're working hard to add 
+more over the coming months.
+
+### [Labels Downloader](https://github.com/VeeqoAPI/shipment-label-downloader)
 
 Sample application, written in Python, shows how to retrieve shipment lables
-from shipped Veeqo orders: https://github.com/VeeqoAPI/shipment-label-downloader
+from shipped Veeqo orders 
 
-### Products Catalog
+### [Products Catalog](https://github.com/VeeqoAPI/products-list)
 
 This example, written in PHP, illustrates how to build simple catalog
-displaying products from Veeqo account: https://github.com/VeeqoAPI/products-list
+displaying products from Veeqo account
+
+### [Dashboard](https://github.com/VeeqoAPI/dashboard)
+
+Written in PHP and based on the same CURL script as the Products Catalog, 
+this live example displays a simple dashboard of orders from today and yesterday.
+Similar to the way the mobile app dashboard works. 
+
+The live example can be [found here.](https://veeqo-dashboard.herokuapp.com/)
 
 ## Support
 
-### Community resources
+### [Developer Forum](http://developer-forum.veeqo.com/)
 
-You can find the Veeqo developer community on the following sites:
+The Veeqo developer forum is the place to go to talk about everything to do with developing on the Veeqo platform.
+Suggestions for API improvements, API support, conversations about the app store. They all live here.
 
-* [Google+](https://plus.google.com/communities/106053163460449492137)
-* [API Documentation Issues](https://github.com/veeqoapi/api-docs/issues)
+If you can't find what you're looking for, have any problems or suggestions just post on the forum.
 
-### Contact us
 
-If you can't find an answer in the resources above you can contact [Veeqo Support](http://help.veeqo.com/).
-They can help you with any problems, questions, or comments you have about the
-Veeqo Platform.
 
 :[Order Resources](resources/orders.md)
 
