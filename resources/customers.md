@@ -11,6 +11,7 @@ Resources related to the customers in the API.
         + Default: `12`
     + page: `1` (integer, optional) - Page to show
         + Default: `1`
+    + query: `joebloggs@example.com` (string, optional) - Free text search
 
 + Request (application/json)
 

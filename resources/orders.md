@@ -793,15 +793,20 @@ Resources related to the orders in the API.
                     },
                     "employee_notes_attributes": [
                         {
-                            note: "Order has been received"
+                            "note": "Order has been received"
                         }
                     ],
+                    "customer_note_attributes": {
+                        "text": "Ring my doorbell"
+                    },
+                           
                     "send_notification_email": false,
                     "total_discounts": 0,
                     "total_tax": 0
                 }
             }
 
+NOTE: you need EITHER "deliver_to_attributes" OR "deliver_to_id"
 
 + Response 201 (application/json)
 
