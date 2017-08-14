@@ -50,12 +50,19 @@ curl --request GET \
   --header 'accept: application/json' \
   --header 'x-api-key: YOUR API KEY HERE'
 ```
+## Veeqo Ruby Gem
+Our friends over at [COAX](https://coaxsoft.com/) have built a 
+[Ruby Gem](https://github.com/coaxsoft/veeqo_api_ruby)
+to integrate with our API. If you're building with ruby then this
+is an invaluable resource. They also have a load of examples on the
+[GitHub](https://github.com/coaxsoft/veeqo_api_ruby/tree/master/examples)
+for the gem that are definately worth checking out.
 
 ## Code Samples
 
 Learn from our examples.
 
-All of our examples live on the VeeqoAPI git hub page. We're working hard to add 
+All of our examples live on the VeeqoAPI GitHub page. We're working hard to add 
 more over the coming months.
 
 ### [Labels Downloader](https://github.com/VeeqoAPI/shipment-label-downloader)
