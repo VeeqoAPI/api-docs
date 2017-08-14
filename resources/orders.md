@@ -747,9 +747,22 @@ Resources related to the orders in the API.
 ### Create a New Order [POST]
 
 + Attributes
-    + channel_id (number, required) - Store ID
-    + deliver_to_id (number, required) - Customer's Shipping Address ID
+    + channel_id (number, required) - Store ID of the store that the order was placed from.
+    + customer_id (number, required) - Customer ID
+    + deliver_to_attributes (array, optional) - Delivery Details. Either this or "deliver_to_id" are required.
+    + deliver_to_id (number, optional) - Customer's Shipping Address ID. Either this or "deliver_to_attributes" are required.
     + delivery_method_id (number, required) - See Delivery Method Resource
+    + due_date (number, optional) - DETAILS COMING SOON
+    + line_items_attributes (array, required) - DETAILS COMING SOON
+    + payment_attributes (array, required) - DETAILS COMING SOON
+    + employee_notes_attributes (array, optional) - DETAILS COMING SOON
+    + customer_note_attributes (array, optional) - DETAILS COMING SOON
+    + send_notification_email (boolean, required) - DETAILS COMING SOON
+    + total_discounts (number, required) - DETAILS COMING SOON
+    + total_tax (number, required) -DETAILS COMING SOON
+
+                
+    
 
 + Request (application/json)
 
@@ -806,7 +819,6 @@ Resources related to the orders in the API.
                 }
             }
 
-NOTE: you need EITHER "deliver_to_attributes" OR "deliver_to_id"
 
 + Response 201 (application/json)
 
