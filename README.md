@@ -8,7 +8,7 @@ documentation for the [Veeqo API][] on [Apiary][].
 ## Requirements
 
 * [Node.JS](https://nodejs.org/)
-* [Ruby])(https://www.ruby-lang.org/)
+* [Ruby](https://www.ruby-lang.org/)
 
 ## Install
 
@@ -31,5 +31,5 @@ Publish documentation to <http://docs.veeqo.apiary.io/>:
 
 Replace `321` with real API key which you can get by going to <https://login.apiary.io/tokens>
 
-[Veeqo API]: http://developers.veeqo.com
-[Apiary]: http://docs.veeqo.apiary.io/
+[Veeqo API]: https://developer.veeqo.com
+[Apiary]: https://developer.veeqo.com/docs
