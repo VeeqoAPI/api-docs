@@ -2,7 +2,7 @@
 
 Resources related to the customers in the API.
 
-## Customer Collection [/customers{?page_size,page}]
+## Customer Collection [/customers{?page_size,page,query}]
 
 ### List All Customers [GET]
 
@@ -40,6 +40,11 @@ Resources related to the customers in the API.
         + zip: `SA1 1NW` (string)
 
 + Request (application/json)
+    + Headers
+
+            x-api-key: 123
+            
+    + Body
 
             {
                 "customer": {
