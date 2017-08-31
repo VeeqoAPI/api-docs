@@ -17,10 +17,36 @@ Resources related to the delivery methods in the API.
     + Headers
 
             x-api-key: 123
+            
 
 + Response 200 (application/json)
 
-        [{"id": 123}]
+        [
+            {
+                "id": 123456,
+                "cost": "0.0",
+                "name": "Default delivery method",
+                "user_id": 23005,
+                "created_at": "2017-07-04T09:40:37.535Z",
+                "updated_at": "2017-07-04T09:40:37.535Z"
+            },
+            {
+                "id": 123457,
+                "cost": "2.0",
+                "name": "Delivery Method #2",
+                "user_id": 23005,
+                "created_at": "2017-08-24T12:32:51.118Z",
+                "updated_at": "2017-08-24T12:32:51.118Z"
+            },
+            {
+                "id": 123457,
+                "cost": "3.0",
+                "name": "Delivery Method #3",
+                "user_id": 23005,
+                "created_at": "2017-08-24T12:33:04.763Z",
+                "updated_at": "2017-08-24T12:33:04.763Z"
+            }
+        ]
 
 ### Create a Delivery Method [POST]
 
@@ -30,15 +56,28 @@ Resources related to the delivery methods in the API.
 
 + Request (application/json)
 
-        { "name": "Next Day Delivery" }
+    + Headers
+    
+            x-api-key: 123
+            
+    + Body
+            
+            { 
+              "name": "Delivery Method #3",
+              "cost": "3.0"
+            }
 
 + Response 201 (application/json)
 
     + Body
 
             {
-                "id": 123,
-                "name": "Next Day Delivery"
+                "id": 123458,
+                "cost": "3.0",
+                "name": "Delivery Method #3",
+                "user_id": 23005,
+                "created_at": "2017-08-24T12:36:33.934Z",
+                "updated_at": "2017-08-24T12:36:33.934Z"
             }
 
 ## Delivery Method [/delivery_methods/{id}]
@@ -48,18 +87,48 @@ Resources related to the delivery methods in the API.
 
 ### View Delivery Method Detail [GET]
 
++ Request (application/json)
+
+    + Headers
+    
+            x-api-key: 123
+
 + Response 200 (application/json)
 
-        { "name": "Next Day Delivery" }
+        {
+            "id": 123458,
+            "cost": "3.0",
+            "name": "Delivery Method #3",
+            "user_id": 23005,
+            "created_at": "2017-08-24T12:33:04.763Z",
+            "updated_at": "2017-08-24T12:33:04.763Z"
+        }
 
 ### Update Delivery Method Detail [PUT]
 
 + Request (application/json)
+    + Headers
+        
+            x-api-key: 123
+                
+    + Body
 
-        { "name": "Next Day Delivery" }
+            { 
+              "name": "Delivery Method #4",
+              "cost": "50.0"
+            }
 
-+ Response 204 (application/json)
++ Response 200 (application/json)
+
+        {
+            "id": 171785,
+            "cost": "30.0",
+            "name": "Delivery Method #3",
+            "user_id": 23005,
+            "created_at": "2017-08-24T12:36:33.934Z",
+            "updated_at": "2017-08-24T12:38:36.851Z"
+        }
 
 ### Delete [DELETE]
 
-+ Response 204
++ Response 200

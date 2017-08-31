@@ -122,6 +122,3 @@ Resources related to the customers in the API.
 
 + Response 204 (application/json)
 
-### Delete [DELETE]
-
-+ Response 204
