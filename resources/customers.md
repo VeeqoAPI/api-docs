@@ -47,8 +47,7 @@ Resources related to the customers in the API.
     + Body
 
             {
-                "customer": {
-                    "id": 123,
+                "customer": { 
                     "email": "customer@example.com",
                     "phone": "01792 720740",
                     "mobile": "07329023903",
