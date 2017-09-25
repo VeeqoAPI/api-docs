@@ -790,7 +790,8 @@ Resources related to the orders in the API.
                             "price_per_unit": 13.99,
                             "quantity": "1",
                             "sellable_id": 1226615,
-                            "tax_rate": 0
+                            "tax_rate": 0,
+                            "additional_options": "Free Text"
                         }
                     ],
                     "payment_attributes": {
@@ -1976,12 +1977,58 @@ Resources related to the orders in the API.
 
 + Attributes
     + order: (Order Base)
+    
+    
 
-+ Request (application/json)
++ Request To update additional_options in line_item_attributes (application/json)
 
-        { "number": "Inv #123" }
+    + Headers
 
-+ Response 204 (application/json)
+        x-api-key: 123
+
+    + Body
+
+        {
+          "order": {
+            "line_items_attributes": [
+              {
+                "sellable_id": 11022902,
+                "price_per_unit": 80.99,
+                "quantity": 1,
+                "additional_options": "www.veeqo.com"
+              }
+            ]
+          }
+        }
+        
++ Response 200
+        
++ Request To add a second item to the order, presuming initial request as above (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+
+        {
+          "order": {
+            "line_items_attributes": [
+              {
+                "sellable_id": 11022902
+              },
+              {
+                "sellable_id": 11022899,
+                "price_per_unit": 1.1,
+                "quantity": 99,
+                "tax_rate": 0.01,
+                "additional_options": "99 bottles sitting on the wall"
+              }
+            ]
+          }
+        }
+
++ Response 200 
 
 
 ## Order Notes [/orders/{order_id}/notes]
@@ -2120,6 +2167,10 @@ Resources related to the updating of order employee notes in the API.
         + tax_rate: `0.2` (number, optional)
 
             Tax rate of the line item
+            
+        + additional_options: `freetext` (string, optional)
+            
+            Custom field for any additional options
 
 + payment_attributes (object, optional) - Payment attributes, if the order has a payment
 

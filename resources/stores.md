@@ -1,6 +1,8 @@
 # Group Stores
 
-Resources related to the stores in the API.
+Resources related to the stores in the API. 
+
+"Stores" are synonymous with "Channels" in Veeqo. A store is an outlet where a user sells their goods. For example; Amazon UK, Ebay UK, Shopify and Amazon DE are all different stores.
 
 ## Store Collection [/channels{?page_size,page}]
 

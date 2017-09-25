@@ -120,7 +120,7 @@ __Meaning:__ Internal Server Error
 
 __Description:__ Due to a problem on our side. This could either be due to problems in the request data provided which cause the error, or due to a temporary service problem.
 
-__Action Required:__ Try again after a few minutes. If the problem persists then check our [status page](http://status.veeqo.com) or [contact us](mailto:helpme@veeqo.com).
+__Action Required:__ Double check your request is correct then try again after a few minutes. If the problem persists then check our [status page](http://status.veeqo.com) or [contact us](mailto:helpme@veeqo.com).
 
 ###Code: 503
 __Meaning:__ Service Unavailable
