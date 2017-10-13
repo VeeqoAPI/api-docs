@@ -35,7 +35,9 @@ Resources related to the orders in the API.
 
 + Response 200 (application/json)
 
-    :[Response](responses/orders/show.json)
+    + Body
+    
+        :[Response](responses/orders/show.json)
 
 
 ### Create a New Order [POST]
@@ -123,7 +125,9 @@ Resources related to the orders in the API.
 
 + Response 200 (application/json)
     
-    :[Response](responses/orders/show.json)
+    + Body
+    
+        :[Response](responses/orders/show.json)
 
 ### Update Order Detail [PUT]
 

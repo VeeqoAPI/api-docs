@@ -23,8 +23,10 @@ Resources related to the products in the API.
             x-api-key: 123
 
 + Response 200 (application/json)
+    
+    + Body
 
-    :[Response](responses/products/index.json)
+        :[Response](responses/products/index.json)
         
 ### Create a New Product [POST]
 
@@ -115,7 +117,9 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
 
-    :[Response](responses/products/show.json)
+    + Body
+    
+        :[Response](responses/products/show.json)
 
 ### Update Product Detail [PUT]
 
