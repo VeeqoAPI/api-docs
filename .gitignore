@@ -1,2 +1,4 @@
 apiary.apib
 .DS_Store
+.idea
+npm-debug.log
