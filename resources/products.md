@@ -56,44 +56,48 @@ Resources related to the products in the API.
     + Body
 
             {
-                "product": {
-                    "description": "",
-                    "estimated_delivery": "",
-                    "notes": "",
-                    "product_brand_id": null,
-                    "product_variants_attributes": [
-                        {
-                            "cost_price": "10",
-                            "min_reorder_level": "0",
-                            "price": "15",
-                            "quantity_to_reorder": "0",
-                            "sku_code": "t-shirt-large",
-                            "tax_rate": "0",
-                            "title": "Large",
-                            "upc_code": ""
-                        },
-                        {
-                            "cost_price": "10",
-                            "min_reorder_level": "0",
-                            "price": "15",
-                            "quantity_to_reorder": "0",
-                            "sku_code": "t-shirt-small",
-                            "tax_rate": "0",
-                            "title": "Small",
-                            "upc_code": ""
-                        }
-                    ],
-                    "images_attributes": [
-                        {
-                            "src": "http://veeqo.com/t-shirt.jpg",
-                            "display_position": "1"
-                        },
-                        {
-                            "src": "http://veeqo.com/t-shirt-2.jpg",
-                            "display_position": "2"
-                        }
-                    ]
-                }
+              "product": {
+                "title": "Golden Retriever Dog - Title",
+                "description": "Golden Retriever Dog - Description",
+                "estimated_delivery": "",
+                "notes": "Golden Retriever Dog - Notes",
+                "product_brand_id": null,
+                "product_variants_attributes": [
+                  {
+                    "title": "Dog - ProdVariantTitle",
+                    "sku_code": "g-dog-1",
+                    "cost_price": "100",
+                    "price": "150",
+                    "min_reorder_level": "0",
+                    "quantity_to_reorder": "0",
+                    "tax_rate": "0",
+                    "upc_code": "",
+                    "model_number": "",
+                    "weight_grams": 10.0,
+                    "weight_unit": "kg"
+                  },
+                  {
+                    "cost_price": "100",
+                    "min_reorder_level": "0",
+                    "price": "150",
+                    "quantity_to_reorder": "0",
+                    "sku_code": "g-dog-2",
+                    "tax_rate": "0",
+                    "title": "Puppy - ProdVariantTitle",
+                    "upc_code": ""
+                  }
+                ],
+                "images_attributes": [
+                  {
+                    "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                    "display_position": "1"
+                  },
+                  {
+                    "src": "http://www.pngmart.com/files/4/Golden-Retriever-Puppy-PNG-Image.png",
+                    "display_position": "2"
+                  }
+                ]
+              }
             }
 
 + Response 201 (application/json)
@@ -101,141 +105,224 @@ Resources related to the products in the API.
     + Body
 
             {
-                "active_channels": [],
-                "brand": null,
-                "channel_products": [],
-                "created_at": "2016-04-06T12:54:15Z",
-                "created_by_id": 1923,
+              "id": 8636420,
+              "title": "Golden Retriever Dog - Title",
+              "created_by_id": 23005,
+              "created_at": "2017-10-13T09:08:13.707Z",
+              "weight": 0,
+              "origin_country": null,
+              "deleted_at": null,
+              "deleted_by_id": null,
+              "hs_tariff_number": null,
+              "notes": "Golden Retriever Dog - Notes",
+              "product_tax_rate_id": null,
+              "tax_rate": 0,
+              "updated_at": "2017-10-13T09:08:13.852Z",
+              "updated_by_id": null,
+              "web_meta_description": "",
+              "web_meta_keywords": "",
+              "web_meta_title": "",
+              "web_page_title": "",
+              "web_page_url": "",
+              "main_image": {
+                "id": 11499439,
+                "binary_data": null,
+                "content_type": null,
+                "display_position": 1,
+                "created_by_id": null,
+                "updated_by_id": null,
                 "deleted_at": null,
                 "deleted_by_id": null,
-                "description": "",
-                "estimated_delivery": null,
-                "hs_tariff_number": null,
-                "id": 574316,
-                "image": null,
-                "inventory": {
-                    "infinite": false
-                },
-                "main_image": null,
-                "main_image_src": null,
-                "notes": "",
-                "on_hand_value": 0.0,
-                "origin_country": null,
-                "product_tax_rate_id": null,
-                "sellables": [
-                    {
-                        "active_channels": [],
-                        "allocated_stock_level_at_all_warehouses": 0,
-                        "available_stock_level_at_all_warehouses": 0,
-                        "channel_sellables": [],
-                        "cost_price": 10.0,
-                        "created_at": "2016-04-06T12:54:16Z",
-                        "created_by_id": 1923,
-                        "full_title": "T-Shirt Large",
-                        "id": 1226620,
-                        "images": [],
-                        "inventory": {
-                            "allocated_stock_level_at_all_warehouses": 0,
-                            "available_stock_level_at_all_warehouses": 0,
-                            "incoming_stock_level_at_all_warehouses": 0,
-                            "infinite": false,
-                            "physical_stock_level_at_all_warehouses": 0
-                        },
-                        "margin": 33.33,
-                        "measurement_attributes": {
-                            "depth": 0.0,
-                            "dimensions_unit": "cm",
-                            "height": 0.0,
-                            "id": 622137,
-                            "width": 0.0
-                        },
-                        "min_reorder_level": 0,
-                        "model_number": "",
-                        "on_hand_value": 0.0,
-                        "price": 15.0,
-                        "profit": 5.0,
-                        "quantity_to_reorder": 0,
-                        "sellable_title": "Large",
-                        "sku_code": "t-shirt-large",
-                        "stock_entries": [],
-                        "stock_level_at_all_warehouses": 0,
-                        "tax_rate": 0.0,
-                        "title": "Large",
-                        "total_quantity_sold": 0,
-                        "type": "ProductVariant",
-                        "upc_code": "",
-                        "updated_at": "2016-04-06T12:54:16Z",
-                        "variant_option_specifics": [],
-                        "variant_property_specifics": [],
-                        "weight": 0.0
+                "created_at": "2017-10-13T09:08:13.759Z",
+                "updated_at": "2017-10-13T09:08:13.759Z",
+                "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                "product_id": 8636420,
+                "picture_file_name": null,
+                "picture_content_type": null,
+                "picture_file_size": null,
+                "picture_updated_at": null,
+                "picture_order": 9999
+              },
+              "estimated_delivery": null,
+              "total_quantity_sold": 0,
+              "brand": null,
+              "sellables": [
+                {
+                  "total_quantity_sold": 0,
+                  "allocated_stock_level_at_all_warehouses": 0,
+                  "id": 14144703,
+                  "type": "ProductVariant",
+                  "title": "Puppy - ProdVariantTitle",
+                  "sku_code": "g-dog-2",
+                  "upc_code": "",
+                  "model_number": "",
+                  "price": 150.0,
+                  "cost_price": 100.0,
+                  "min_reorder_level": 0,
+                  "quantity_to_reorder": 0,
+                  "created_by_id": 23005,
+                  "created_at": "2017-10-13T09:08:13.744Z",
+                  "updated_at": "2017-10-13T09:08:13.744Z",
+                  "weight_grams": 0.0,
+                  "weight_unit": "g",
+                  "product_title": "Golden Retriever Dog - Title",
+                  "full_title": "Golden Retriever Dog - Title Puppy - ProdVariantTitle",
+                  "sellable_title": "Puppy - ProdVariantTitle",
+                  "profit": 50.0,
+                  "margin": 33.33,
+                  "tax_rate": 0.0,
+                  "product": {
+                    "id": 8636420,
+                    "title": "Golden Retriever Dog - Title",
+                    "weight": 0,
+                    "origin_country": null,
+                    "hs_tariff_number": null,
+                    "tax_rate": 0,
+                    "main_image": {
+                      "id": 11499439,
+                      "binary_data": null,
+                      "content_type": null,
+                      "display_position": 1,
+                      "created_by_id": null,
+                      "updated_by_id": null,
+                      "deleted_at": null,
+                      "deleted_by_id": null,
+                      "created_at": "2017-10-13T09:08:13.759Z",
+                      "updated_at": "2017-10-13T09:08:13.759Z",
+                      "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                      "product_id": 8636420,
+                      "picture_file_name": null,
+                      "picture_content_type": null,
+                      "picture_file_size": null,
+                      "picture_updated_at": null,
+                      "picture_order": 9999
                     },
-                    {
-                        "active_channels": [],
-                        "allocated_stock_level_at_all_warehouses": 0,
-                        "available_stock_level_at_all_warehouses": 0,
-                        "channel_sellables": [],
-                        "cost_price": 10.0,
-                        "created_at": "2016-04-06T12:54:16Z",
-                        "created_by_id": 1923,
-                        "full_title": "T-Shirt Small",
-                        "id": 1226621,
-                        "images": [],
-                        "inventory": {
-                            "allocated_stock_level_at_all_warehouses": 0,
-                            "available_stock_level_at_all_warehouses": 0,
-                            "incoming_stock_level_at_all_warehouses": 0,
-                            "infinite": false,
-                            "physical_stock_level_at_all_warehouses": 0
-                        },
-                        "margin": 33.33,
-                        "measurement_attributes": {
-                            "depth": 0.0,
-                            "dimensions_unit": "cm",
-                            "height": 0.0,
-                            "id": 622138,
-                            "width": 0.0
-                        },
-                        "min_reorder_level": 0,
-                        "model_number": "",
-                        "on_hand_value": 0.0,
-                        "price": 15.0,
-                        "profit": 5.0,
-                        "quantity_to_reorder": 0,
-                        "sellable_title": "Small",
-                        "sku_code": "t-shirt-small",
-                        "stock_entries": [],
-                        "stock_level_at_all_warehouses": 0,
-                        "tax_rate": 0.0,
-                        "title": "Small",
-                        "total_quantity_sold": 0,
-                        "type": "ProductVariant",
-                        "upc_code": "",
-                        "updated_at": "2016-04-06T12:54:16Z",
-                        "variant_option_specifics": [],
-                        "variant_property_specifics": [],
-                        "weight": 0.0
-                    }
-                ],
-                "stock_level_sync_status": {
-                    "all_subordinate_entities_synced": null,
-                    "last_change_at": null,
-                    "last_sync_at": null
+                    "estimated_delivery": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "description": "Golden Retriever Dog - Description",
+                    "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+                  },
+                  "stock_entries": [],
+                  "variant_option_specifics": [],
+                  "variant_property_specifics": [],
+                  "measurement_attributes": {
+                    "id": 12587623,
+                    "width": 0.0,
+                    "height": 0.0,
+                    "depth": 0.0,
+                    "dimensions_unit": "cm"
+                  },
+                  "images": [],
+                  "active_channels": [],
+                  "channel_sellables": [],
+                  "available_stock_level_at_all_warehouses": 0,
+                  "stock_level_at_all_warehouses": 0,
+                  "on_hand_value": 0.0,
+                  "inventory": {
+                    "infinite": false,
+                    "physical_stock_level_at_all_warehouses": 0,
+                    "allocated_stock_level_at_all_warehouses": 0,
+                    "available_stock_level_at_all_warehouses": 0,
+                    "incoming_stock_level_at_all_warehouses": 0
+                  },
+                  "weight": 0.0
                 },
-                "tags": "",
-                "tax_rate": 0,
-                "title": "T-Shirt",
-                "total_allocated_stock_level": 0,
-                "total_available_stock_level": 0,
-                "total_quantity_sold": 0,
-                "total_stock_level": 0,
-                "updated_at": "2016-04-06T12:54:15Z",
-                "updated_by_id": null,
-                "web_meta_description": "",
-                "web_meta_keywords": "",
-                "web_meta_title": "",
-                "web_page_title": "",
-                "web_page_url": "",
-                "weight": 0
+                {
+                  "total_quantity_sold": 0,
+                  "allocated_stock_level_at_all_warehouses": 0,
+                  "id": 14144702,
+                  "type": "ProductVariant",
+                  "title": "Dog - ProdVariantTitle",
+                  "sku_code": "g-dog-1",
+                  "upc_code": "",
+                  "model_number": "",
+                  "price": 150.0,
+                  "cost_price": 100.0,
+                  "min_reorder_level": 0,
+                  "quantity_to_reorder": 0,
+                  "created_by_id": 23005,
+                  "created_at": "2017-10-13T09:08:13.712Z",
+                  "updated_at": "2017-10-13T09:08:13.712Z",
+                  "weight_grams": 10.0,
+                  "weight_unit": "g",
+                  "product_title": "Golden Retriever Dog - Title",
+                  "full_title": "Golden Retriever Dog - Title Dog - ProdVariantTitle",
+                  "sellable_title": "Dog - ProdVariantTitle",
+                  "profit": 50.0,
+                  "margin": 33.33,
+                  "tax_rate": 0.0,
+                  "product": {
+                    "id": 8636420,
+                    "title": "Golden Retriever Dog - Title",
+                    "weight": 0,
+                    "origin_country": null,
+                    "hs_tariff_number": null,
+                    "tax_rate": 0,
+                    "main_image": {
+                      "id": 11499439,
+                      "binary_data": null,
+                      "content_type": null,
+                      "display_position": 1,
+                      "created_by_id": null,
+                      "updated_by_id": null,
+                      "deleted_at": null,
+                      "deleted_by_id": null,
+                      "created_at": "2017-10-13T09:08:13.759Z",
+                      "updated_at": "2017-10-13T09:08:13.759Z",
+                      "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                      "product_id": 8636420,
+                      "picture_file_name": null,
+                      "picture_content_type": null,
+                      "picture_file_size": null,
+                      "picture_updated_at": null,
+                      "picture_order": 9999
+                    },
+                    "estimated_delivery": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "description": "Golden Retriever Dog - Description",
+                    "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+                  },
+                  "stock_entries": [],
+                  "variant_option_specifics": [],
+                  "variant_property_specifics": [],
+                  "measurement_attributes": {
+                    "id": 12587624,
+                    "width": 0.0,
+                    "height": 0.0,
+                    "depth": 0.0,
+                    "dimensions_unit": "cm"
+                  },
+                  "images": [],
+                  "active_channels": [],
+                  "channel_sellables": [],
+                  "available_stock_level_at_all_warehouses": 0,
+                  "stock_level_at_all_warehouses": 0,
+                  "on_hand_value": 0.0,
+                  "inventory": {
+                    "infinite": false,
+                    "physical_stock_level_at_all_warehouses": 0,
+                    "allocated_stock_level_at_all_warehouses": 0,
+                    "available_stock_level_at_all_warehouses": 0,
+                    "incoming_stock_level_at_all_warehouses": 0
+                  },
+                  "weight": 10.0
+                }
+              ],
+              "channel_products": [],
+              "active_channels": [],
+              "tags": [],
+              "image": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+              "description": "Golden Retriever Dog - Description",
+              "on_hand_value": 0.0,
+              "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+              "total_allocated_stock_level": 0,
+              "total_available_stock_level": 0,
+              "total_stock_level": 0,
+              "inventory": {
+                "infinite": false
+              }
             }
 
 ## Product [/products/{product_id}]
@@ -247,24 +334,649 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
 
-        {"id":5793641,"title":"Sennheiser Momentum In-Ear","created_by_id":23005,"created_at":"2017-08-21T11:50:23.804Z","weight":0,"origin_country":"","deleted_at":null,"deleted_by_id":null,"hs_tariff_number":null,"notes":"","product_tax_rate_id":null,"tax_rate":0,"updated_at":"2017-09-29T09:46:46.500Z","updated_by_id":null,"web_meta_description":"","web_meta_keywords":"","web_meta_title":"","web_page_title":"","web_page_url":"","main_image":{"id":10319279,"binary_data":null,"content_type":null,"display_position":null,"created_by_id":null,"updated_by_id":null,"deleted_at":null,"deleted_by_id":null,"created_at":"2017-08-21T11:50:24.545Z","updated_at":"2017-08-21T11:50:27.358Z","src":null,"product_id":5793641,"picture_file_name":"senn.jpg","picture_content_type":"image/jpeg","picture_file_size":165161,"picture_updated_at":"2017-08-21T11:50:24.450Z","picture_order":0},"estimated_delivery":null,"total_quantity_sold":9,"brand":null,"sellables":[{"total_quantity_sold":0,"allocated_stock_level_at_all_warehouses":0,"id":13847534,"type":"ProductVariant","title":"Sennheiser Momentum In-Ear","sku_code":"M2IEG-B","upc_code":"4044155094916","model_number":"","price":75.0,"cost_price":40.0,"min_reorder_level":0,"quantity_to_reorder":0,"created_by_id":23005,"created_at":"2017-09-29T09:45:01.265Z","updated_at":"2017-09-29T09:46:46.492Z","weight_grams":0.0,"weight_unit":"g","product_title":"Sennheiser Momentum In-Ear","full_title":"Sennheiser Momentum In-Ear Sennheiser Momentum In-Ear","sellable_title":"Sennheiser Momentum In-Ear","profit":35.0,"margin":46.67,"tax_rate":20.0,"product":{"id":5793641,"title":"Sennheiser Momentum In-Ear","weight":0,"origin_country":"","hs_tariff_number":null,"tax_rate":0,"main_image":{"id":10319279,"binary_data":null,"content_type":null,"display_position":null,"created_by_id":null,"updated_by_id":null,"deleted_at":null,"deleted_by_id":null,"created_at":"2017-08-21T11:50:24.545Z","updated_at":"2017-08-21T11:50:27.358Z","src":null,"product_id":5793641,"picture_file_name":"senn.jpg","picture_content_type":"image/jpeg","picture_file_size":165161,"picture_updated_at":"2017-08-21T11:50:24.450Z","picture_order":0},"estimated_delivery":null,"deleted_at":null,"deleted_by_id":null,"description":"Quintessential. Forward Thinking. Custom machined stainless steel sound tunnels for acoustic precision.","main_image_src":"https://veeqo-production-storage.s3.amazonaws.com/images/10319279/senn_original.jpg?1503316224"},"stock_entries":[{"id":14346411,"sellable_id":13847534,"warehouse_id":22668,"infinite":false,"allocated_stock_level":0,"warehouse":{"id":22668,"name":"My Warehouse","user_id":null,"address_line_1":"","address_line_2":"","city":"","region":"","country":null,"post_code":"","inventory_type_code":"wavg","default_min_reorder":0,"click_and_collect_enabled":false,"click_and_collect_days":null,"created_by_id":23005,"updated_by_id":null,"deleted_at":null,"deleted_by_id":null,"created_at":"2017-07-04T09:40:37.539Z","updated_at":"2017-07-04T09:40:37.539Z","phone":null,"requested_carrier_account":null},"location":"flow","stock_running_low":false,"updated_at":"2017-09-29T09:46:46.481Z","incoming_stock_level":0,"physical_stock_level":20,"available_stock_level":20,"sellable_on_hand_value":800.0}],"variant_option_specifics":[{"id":6083049,"product_specific_id":2622355,"product_property_id":58230,"product_property_name":"Colour","value":"Black"}],"variant_property_specifics":[],"measurement_attributes":{"id":12268074,"width":0.0,"height":0.0,"depth":0.0,"dimensions_unit":"cm"},"images":[],"active_channels":[],"channel_sellables":[],"available_stock_level_at_all_warehouses":20,"stock_level_at_all_warehouses":20,"on_hand_value":800.0,"inventory":{"infinite":false,"physical_stock_level_at_all_warehouses":20,"allocated_stock_level_at_all_warehouses":0,"available_stock_level_at_all_warehouses":20,"incoming_stock_level_at_all_warehouses":0},"weight":0.0},{"total_quantity_sold":9,"allocated_stock_level_at_all_warehouses":4,"id":11022902,"type":"ProductVariant","title":"Sennheiser Momentum In-Ear","sku_code":"m2ieg","upc_code":"615104257931","model_number":"","price":75.0,"cost_price":40.0,"min_reorder_level":0,"quantity_to_reorder":0,"created_by_id":23005,"created_at":"2017-08-21T11:50:23.808Z","updated_at":"2017-09-29T09:45:54.505Z","weight_grams":0.0,"weight_unit":"g","product_title":"Sennheiser Momentum In-Ear","full_title":"Sennheiser Momentum In-Ear Sennheiser Momentum In-Ear","sellable_title":"Sennheiser Momentum In-Ear","profit":35.0,"margin":46.67,"tax_rate":20.0,"product":{"id":5793641,"title":"Sennheiser Momentum In-Ear","weight":0,"origin_country":"","hs_tariff_number":null,"tax_rate":0,"main_image":{"id":10319279,"binary_data":null,"content_type":null,"display_position":null,"created_by_id":null,"updated_by_id":null,"deleted_at":null,"deleted_by_id":null,"created_at":"2017-08-21T11:50:24.545Z","updated_at":"2017-08-21T11:50:27.358Z","src":null,"product_id":5793641,"picture_file_name":"senn.jpg","picture_content_type":"image/jpeg","picture_file_size":165161,"picture_updated_at":"2017-08-21T11:50:24.450Z","picture_order":0},"estimated_delivery":null,"deleted_at":null,"deleted_by_id":null,"description":"Quintessential. Forward Thinking. Custom machined stainless steel sound tunnels for acoustic precision.","main_image_src":"https://veeqo-production-storage.s3.amazonaws.com/images/10319279/senn_original.jpg?1503316224"},"stock_entries":[{"id":11435171,"sellable_id":11022902,"warehouse_id":22668,"infinite":false,"allocated_stock_level":4,"warehouse":{"id":22668,"name":"My Warehouse","user_id":null,"address_line_1":"","address_line_2":"","city":"","region":"","country":null,"post_code":"","inventory_type_code":"wavg","default_min_reorder":0,"click_and_collect_enabled":false,"click_and_collect_days":null,"created_by_id":23005,"updated_by_id":null,"deleted_at":null,"deleted_by_id":null,"created_at":"2017-07-04T09:40:37.539Z","updated_at":"2017-07-04T09:40:37.539Z","phone":null,"requested_carrier_account":null},"location":"fhigh","stock_running_low":false,"updated_at":"2017-09-25T10:37:32.686Z","incoming_stock_level":0,"physical_stock_level":44,"available_stock_level":40,"sellable_on_hand_value":1760.0}],"variant_option_specifics":[{"id":6083048,"product_specific_id":2622355,"product_property_id":58230,"product_property_name":"Colour","value":"Red"}],"variant_property_specifics":[],"measurement_attributes":{"id":9524262,"width":0.0,"height":0.0,"depth":0.0,"dimensions_unit":"cm"},"images":[],"active_channels":[],"channel_sellables":[],"available_stock_level_at_all_warehouses":40,"stock_level_at_all_warehouses":44,"on_hand_value":1760.0,"inventory":{"infinite":false,"physical_stock_level_at_all_warehouses":44,"allocated_stock_level_at_all_warehouses":4,"available_stock_level_at_all_warehouses":40,"incoming_stock_level_at_all_warehouses":0},"weight":0.0}],"channel_products":[],"active_channels":[],"tags":[],"image":"https://veeqo-production-storage.s3.amazonaws.com/images/10319279/senn_original.jpg?1503316224","description":"Quintessential. Forward Thinking. Custom machined stainless steel sound tunnels for acoustic precision.","on_hand_value":2560.0,"main_image_src":"https://veeqo-production-storage.s3.amazonaws.com/images/10319279/senn_original.jpg?1503316224","total_allocated_stock_level":4,"total_available_stock_level":60,"total_stock_level":64,"inventory":{"infinite":false}}
+        {
+          "id": 8636420,
+          "title": "Golden Retriever Dog - Title",
+          "created_by_id": 23005,
+          "created_at": "2017-10-13T09:08:13.707Z",
+          "weight": 0,
+          "origin_country": null,
+          "deleted_at": null,
+          "deleted_by_id": null,
+          "hs_tariff_number": null,
+          "notes": "Golden Retriever Dog - Notes",
+          "product_tax_rate_id": null,
+          "tax_rate": 0,
+          "updated_at": "2017-10-13T14:17:46.746Z",
+          "updated_by_id": 23005,
+          "web_meta_description": "",
+          "web_meta_keywords": "",
+          "web_meta_title": "",
+          "web_page_title": "",
+          "web_page_url": "",
+          "main_image": {
+            "id": 11499439,
+            "binary_data": null,
+            "content_type": null,
+            "display_position": 1,
+            "created_by_id": null,
+            "updated_by_id": null,
+            "deleted_at": null,
+            "deleted_by_id": null,
+            "created_at": "2017-10-13T09:08:13.759Z",
+            "updated_at": "2017-10-13T09:08:13.759Z",
+            "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+            "product_id": 8636420,
+            "picture_file_name": null,
+            "picture_content_type": null,
+            "picture_file_size": null,
+            "picture_updated_at": null,
+            "picture_order": 9999
+          },
+          "estimated_delivery": null,
+          "total_quantity_sold": 0,
+          "brand": null,
+          "sellables": [
+            {
+              "total_quantity_sold": 0,
+              "allocated_stock_level_at_all_warehouses": 0,
+              "id": 14144703,
+              "type": "ProductVariant",
+              "title": "Puppy - ProdVariantTitle",
+              "sku_code": "g-dog-2",
+              "upc_code": "",
+              "model_number": "",
+              "price": 150.0,
+              "cost_price": 100.0,
+              "min_reorder_level": 0,
+              "quantity_to_reorder": 0,
+              "created_by_id": 23005,
+              "created_at": "2017-10-13T09:08:13.744Z",
+              "updated_at": "2017-10-13T14:17:46.763Z",
+              "weight_grams": 0.0,
+              "weight_unit": "g",
+              "product_title": "Golden Retriever Dog - Title",
+              "full_title": "Golden Retriever Dog - Title Puppy - ProdVariantTitle",
+              "sellable_title": "Puppy - ProdVariantTitle",
+              "profit": 50.0,
+              "margin": 33.33,
+              "tax_rate": 0.0,
+              "product": {
+                "id": 8636420,
+                "title": "Golden Retriever Dog - Title",
+                "weight": 0,
+                "origin_country": null,
+                "hs_tariff_number": null,
+                "tax_rate": 0,
+                "main_image": {
+                  "id": 11499439,
+                  "binary_data": null,
+                  "content_type": null,
+                  "display_position": 1,
+                  "created_by_id": null,
+                  "updated_by_id": null,
+                  "deleted_at": null,
+                  "deleted_by_id": null,
+                  "created_at": "2017-10-13T09:08:13.759Z",
+                  "updated_at": "2017-10-13T09:08:13.759Z",
+                  "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                  "product_id": 8636420,
+                  "picture_file_name": null,
+                  "picture_content_type": null,
+                  "picture_file_size": null,
+                  "picture_updated_at": null,
+                  "picture_order": 9999
+                },
+                "estimated_delivery": null,
+                "deleted_at": null,
+                "deleted_by_id": null,
+                "description": "Golden Retriever Dog - Description",
+                "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+              },
+              "stock_entries": [
+                {
+                  "id": 14723018,
+                  "sellable_id": 14144703,
+                  "warehouse_id": 22668,
+                  "infinite": false,
+                  "allocated_stock_level": 0,
+                  "warehouse": {
+                    "id": 22668,
+                    "name": "My Warehouse",
+                    "user_id": null,
+                    "address_line_1": "",
+                    "address_line_2": "",
+                    "city": "",
+                    "region": "",
+                    "country": null,
+                    "post_code": "",
+                    "inventory_type_code": "wavg",
+                    "default_min_reorder": 0,
+                    "click_and_collect_enabled": false,
+                    "click_and_collect_days": null,
+                    "created_by_id": 23005,
+                    "updated_by_id": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "created_at": "2017-07-04T09:40:37.539Z",
+                    "updated_at": "2017-07-04T09:40:37.539Z",
+                    "phone": null,
+                    "requested_carrier_account": null
+                  },
+                  "location": null,
+                  "stock_running_low": true,
+                  "updated_at": "2017-10-13T09:13:49.145Z",
+                  "incoming_stock_level": 0,
+                  "physical_stock_level": 0,
+                  "available_stock_level": 0,
+                  "sellable_on_hand_value": 0.0
+                }
+              ],
+              "variant_option_specifics": [],
+              "variant_property_specifics": [],
+              "measurement_attributes": {
+                "id": 12587623,
+                "width": 0.0,
+                "height": 0.0,
+                "depth": 0.0,
+                "dimensions_unit": "cm"
+              },
+              "images": [],
+              "active_channels": [],
+              "channel_sellables": [],
+              "available_stock_level_at_all_warehouses": 0,
+              "stock_level_at_all_warehouses": 0,
+              "on_hand_value": 0.0,
+              "inventory": {
+                "infinite": false,
+                "physical_stock_level_at_all_warehouses": 0,
+                "allocated_stock_level_at_all_warehouses": 0,
+                "available_stock_level_at_all_warehouses": 0,
+                "incoming_stock_level_at_all_warehouses": 0
+              },
+              "weight": 0.0
+            },
+            {
+              "total_quantity_sold": 0,
+              "allocated_stock_level_at_all_warehouses": 0,
+              "id": 14144702,
+              "type": "ProductVariant",
+              "title": "Dog - ProdVariantTitle",
+              "sku_code": "g-dog-1",
+              "upc_code": "",
+              "model_number": "",
+              "price": 150.0,
+              "cost_price": 100.0,
+              "min_reorder_level": 0,
+              "quantity_to_reorder": 0,
+              "created_by_id": 23005,
+              "created_at": "2017-10-13T09:08:13.712Z",
+              "updated_at": "2017-10-13T14:17:46.750Z",
+              "weight_grams": 10.0,
+              "weight_unit": "g",
+              "product_title": "Golden Retriever Dog - Title",
+              "full_title": "Golden Retriever Dog - Title Dog - ProdVariantTitle",
+              "sellable_title": "Dog - ProdVariantTitle",
+              "profit": 50.0,
+              "margin": 33.33,
+              "tax_rate": 0.0,
+              "product": {
+                "id": 8636420,
+                "title": "Golden Retriever Dog - Title",
+                "weight": 0,
+                "origin_country": null,
+                "hs_tariff_number": null,
+                "tax_rate": 0,
+                "main_image": {
+                  "id": 11499439,
+                  "binary_data": null,
+                  "content_type": null,
+                  "display_position": 1,
+                  "created_by_id": null,
+                  "updated_by_id": null,
+                  "deleted_at": null,
+                  "deleted_by_id": null,
+                  "created_at": "2017-10-13T09:08:13.759Z",
+                  "updated_at": "2017-10-13T09:08:13.759Z",
+                  "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                  "product_id": 8636420,
+                  "picture_file_name": null,
+                  "picture_content_type": null,
+                  "picture_file_size": null,
+                  "picture_updated_at": null,
+                  "picture_order": 9999
+                },
+                "estimated_delivery": null,
+                "deleted_at": null,
+                "deleted_by_id": null,
+                "description": "Golden Retriever Dog - Description",
+                "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+              },
+              "stock_entries": [
+                {
+                  "id": 14723019,
+                  "sellable_id": 14144702,
+                  "warehouse_id": 22668,
+                  "infinite": false,
+                  "allocated_stock_level": 0,
+                  "warehouse": {
+                    "id": 22668,
+                    "name": "My Warehouse",
+                    "user_id": null,
+                    "address_line_1": "",
+                    "address_line_2": "",
+                    "city": "",
+                    "region": "",
+                    "country": null,
+                    "post_code": "",
+                    "inventory_type_code": "wavg",
+                    "default_min_reorder": 0,
+                    "click_and_collect_enabled": false,
+                    "click_and_collect_days": null,
+                    "created_by_id": 23005,
+                    "updated_by_id": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "created_at": "2017-07-04T09:40:37.539Z",
+                    "updated_at": "2017-07-04T09:40:37.539Z",
+                    "phone": null,
+                    "requested_carrier_account": null
+                  },
+                  "location": null,
+                  "stock_running_low": true,
+                  "updated_at": "2017-10-13T09:13:49.172Z",
+                  "incoming_stock_level": 0,
+                  "physical_stock_level": 0,
+                  "available_stock_level": 0,
+                  "sellable_on_hand_value": 0.0
+                }
+              ],
+              "variant_option_specifics": [],
+              "variant_property_specifics": [],
+              "measurement_attributes": {
+                "id": 12587624,
+                "width": 0.0,
+                "height": 0.0,
+                "depth": 0.0,
+                "dimensions_unit": "cm"
+              },
+              "images": [],
+              "active_channels": [],
+              "channel_sellables": [],
+              "available_stock_level_at_all_warehouses": 0,
+              "stock_level_at_all_warehouses": 0,
+              "on_hand_value": 0.0,
+              "inventory": {
+                "infinite": false,
+                "physical_stock_level_at_all_warehouses": 0,
+                "allocated_stock_level_at_all_warehouses": 0,
+                "available_stock_level_at_all_warehouses": 0,
+                "incoming_stock_level_at_all_warehouses": 0
+              },
+              "weight": 10.0
+            }
+          ],
+          "channel_products": [],
+          "active_channels": [],
+          "tags": [],
+          "image": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+          "description": "Golden Retriever Dog - Description",
+          "on_hand_value": 0.0,
+          "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+          "total_allocated_stock_level": 0,
+          "total_available_stock_level": 0,
+          "total_stock_level": 0,
+          "inventory": {
+            "infinite": false
+          }
+        }
 
 ### Update Product Detail [PUT]
 
-+ Request (application/json)
++ Request To update product title (application/json)
 
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+         {
+           "product": {
+             "title": "Golden Retriever Dog - TitleUpdate"
+           }
+         }
+    
+    
++ Request To update product variant titles and other attributes. If you get a 500 error, you are submitting an unaccepted attribute. Try making the request more simple. (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+    
         {
-            "product": {
-                "product_variants_attributes": [
-                    {
-                        "id": 1226623,
-                        "title": "New SKU Value"
-                    }
-                ],
-            }
+          "product": {
+            "title": "Golden Retriever Dog - TitleUpdate",
+            "description": "Golden Retriever Dog - DescriptionUpdate",
+            "notes": "Golden Retriever Dog - NotesUpdate",
+            "product_variants_attributes": [
+              {
+                "id": 14144702,
+                "title": "Dog - ProdVariantTitleUpdate",
+                "sku_code": "g-dog-1u",
+                "cost_price": "100",
+                "price": "150"
+              },
+              {
+                "id": 14144703,
+                "sku_code": "g-dog-2u",
+                "title": "Puppy - ProdVariantTitleUpdate2"
+              }
+            ]
+          }
         }
 
-+ Response 204 (application/json)
++ Response 200 (application/json)
+    
+    + Body
+    
+        {
+          "id": 8636420,
+          "title": "Golden Retriever Dog - TitleUpdate",
+          "created_by_id": 23005,
+          "created_at": "2017-10-13T09:08:13.707Z",
+          "weight": 0,
+          "origin_country": null,
+          "deleted_at": null,
+          "deleted_by_id": null,
+          "hs_tariff_number": null,
+          "notes": "Golden Retriever Dog - NotesUpdate",
+          "product_tax_rate_id": null,
+          "tax_rate": 0,
+          "updated_at": "2017-10-13T14:16:12.661Z",
+          "updated_by_id": 23005,
+          "web_meta_description": "",
+          "web_meta_keywords": "",
+          "web_meta_title": "",
+          "web_page_title": "",
+          "web_page_url": "",
+          "main_image": {
+            "id": 11499439,
+            "binary_data": null,
+            "content_type": null,
+            "display_position": 1,
+            "created_by_id": null,
+            "updated_by_id": null,
+            "deleted_at": null,
+            "deleted_by_id": null,
+            "created_at": "2017-10-13T09:08:13.759Z",
+            "updated_at": "2017-10-13T09:08:13.759Z",
+            "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+            "product_id": 8636420,
+            "picture_file_name": null,
+            "picture_content_type": null,
+            "picture_file_size": null,
+            "picture_updated_at": null,
+            "picture_order": 9999
+          },
+          "estimated_delivery": null,
+          "total_quantity_sold": 0,
+          "brand": null,
+          "sellables": [
+            {
+              "total_quantity_sold": 0,
+              "allocated_stock_level_at_all_warehouses": 0,
+              "id": 14144703,
+              "type": "ProductVariant",
+              "title": "Puppy - ProdVariantTitleUpdate2",
+              "sku_code": "g-dog-2u",
+              "upc_code": "",
+              "model_number": "",
+              "price": 150.0,
+              "cost_price": 100.0,
+              "min_reorder_level": 0,
+              "quantity_to_reorder": 0,
+              "created_by_id": 23005,
+              "created_at": "2017-10-13T09:08:13.744Z",
+              "updated_at": "2017-10-13T14:16:12.678Z",
+              "weight_grams": 0.0,
+              "weight_unit": "g",
+              "product_title": "Golden Retriever Dog - TitleUpdate",
+              "full_title": "Golden Retriever Dog - TitleUpdate Puppy - ProdVariantTitleUpdate2",
+              "sellable_title": "Puppy - ProdVariantTitleUpdate2",
+              "profit": 50.0,
+              "margin": 33.33,
+              "tax_rate": 0.0,
+              "product": {
+                "id": 8636420,
+                "title": "Golden Retriever Dog - TitleUpdate",
+                "weight": 0,
+                "origin_country": null,
+                "hs_tariff_number": null,
+                "tax_rate": 0,
+                "main_image": {
+                  "id": 11499439,
+                  "binary_data": null,
+                  "content_type": null,
+                  "display_position": 1,
+                  "created_by_id": null,
+                  "updated_by_id": null,
+                  "deleted_at": null,
+                  "deleted_by_id": null,
+                  "created_at": "2017-10-13T09:08:13.759Z",
+                  "updated_at": "2017-10-13T09:08:13.759Z",
+                  "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                  "product_id": 8636420,
+                  "picture_file_name": null,
+                  "picture_content_type": null,
+                  "picture_file_size": null,
+                  "picture_updated_at": null,
+                  "picture_order": 9999
+                },
+                "estimated_delivery": null,
+                "deleted_at": null,
+                "deleted_by_id": null,
+                "description": "Golden Retriever Dog - DescriptionUpdate",
+                "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+              },
+              "stock_entries": [
+                {
+                  "id": 14723018,
+                  "sellable_id": 14144703,
+                  "warehouse_id": 22668,
+                  "infinite": false,
+                  "allocated_stock_level": 0,
+                  "warehouse": {
+                    "id": 22668,
+                    "name": "My Warehouse",
+                    "user_id": null,
+                    "address_line_1": "",
+                    "address_line_2": "",
+                    "city": "",
+                    "region": "",
+                    "country": null,
+                    "post_code": "",
+                    "inventory_type_code": "wavg",
+                    "default_min_reorder": 0,
+                    "click_and_collect_enabled": false,
+                    "click_and_collect_days": null,
+                    "created_by_id": 23005,
+                    "updated_by_id": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "created_at": "2017-07-04T09:40:37.539Z",
+                    "updated_at": "2017-07-04T09:40:37.539Z",
+                    "phone": null,
+                    "requested_carrier_account": null
+                  },
+                  "location": null,
+                  "stock_running_low": true,
+                  "updated_at": "2017-10-13T09:13:49.145Z",
+                  "incoming_stock_level": 0,
+                  "physical_stock_level": 0,
+                  "available_stock_level": 0,
+                  "sellable_on_hand_value": 0.0
+                }
+              ],
+              "variant_option_specifics": [],
+              "variant_property_specifics": [],
+              "measurement_attributes": {
+                "id": 12587623,
+                "width": 0.0,
+                "height": 0.0,
+                "depth": 0.0,
+                "dimensions_unit": "cm"
+              },
+              "images": [],
+              "active_channels": [],
+              "channel_sellables": [],
+              "available_stock_level_at_all_warehouses": 0,
+              "stock_level_at_all_warehouses": 0,
+              "on_hand_value": 0.0,
+              "inventory": {
+                "infinite": false,
+                "physical_stock_level_at_all_warehouses": 0,
+                "allocated_stock_level_at_all_warehouses": 0,
+                "available_stock_level_at_all_warehouses": 0,
+                "incoming_stock_level_at_all_warehouses": 0
+              },
+              "weight": 0.0
+            },
+            {
+              "total_quantity_sold": 0,
+              "allocated_stock_level_at_all_warehouses": 0,
+              "id": 14144702,
+              "type": "ProductVariant",
+              "title": "Dog - ProdVariantTitleUpdate",
+              "sku_code": "g-dog-1u",
+              "upc_code": "",
+              "model_number": "",
+              "price": 150.0,
+              "cost_price": 100.0,
+              "min_reorder_level": 0,
+              "quantity_to_reorder": 0,
+              "created_by_id": 23005,
+              "created_at": "2017-10-13T09:08:13.712Z",
+              "updated_at": "2017-10-13T14:16:12.665Z",
+              "weight_grams": 10.0,
+              "weight_unit": "g",
+              "product_title": "Golden Retriever Dog - TitleUpdate",
+              "full_title": "Golden Retriever Dog - TitleUpdate Dog - ProdVariantTitleUpdate",
+              "sellable_title": "Dog - ProdVariantTitleUpdate",
+              "profit": 50.0,
+              "margin": 33.33,
+              "tax_rate": 0.0,
+              "product": {
+                "id": 8636420,
+                "title": "Golden Retriever Dog - TitleUpdate",
+                "weight": 0,
+                "origin_country": null,
+                "hs_tariff_number": null,
+                "tax_rate": 0,
+                "main_image": {
+                  "id": 11499439,
+                  "binary_data": null,
+                  "content_type": null,
+                  "display_position": 1,
+                  "created_by_id": null,
+                  "updated_by_id": null,
+                  "deleted_at": null,
+                  "deleted_by_id": null,
+                  "created_at": "2017-10-13T09:08:13.759Z",
+                  "updated_at": "2017-10-13T09:08:13.759Z",
+                  "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+                  "product_id": 8636420,
+                  "picture_file_name": null,
+                  "picture_content_type": null,
+                  "picture_file_size": null,
+                  "picture_updated_at": null,
+                  "picture_order": 9999
+                },
+                "estimated_delivery": null,
+                "deleted_at": null,
+                "deleted_by_id": null,
+                "description": "Golden Retriever Dog - DescriptionUpdate",
+                "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png"
+              },
+              "stock_entries": [
+                {
+                  "id": 14723019,
+                  "sellable_id": 14144702,
+                  "warehouse_id": 22668,
+                  "infinite": false,
+                  "allocated_stock_level": 0,
+                  "warehouse": {
+                    "id": 22668,
+                    "name": "My Warehouse",
+                    "user_id": null,
+                    "address_line_1": "",
+                    "address_line_2": "",
+                    "city": "",
+                    "region": "",
+                    "country": null,
+                    "post_code": "",
+                    "inventory_type_code": "wavg",
+                    "default_min_reorder": 0,
+                    "click_and_collect_enabled": false,
+                    "click_and_collect_days": null,
+                    "created_by_id": 23005,
+                    "updated_by_id": null,
+                    "deleted_at": null,
+                    "deleted_by_id": null,
+                    "created_at": "2017-07-04T09:40:37.539Z",
+                    "updated_at": "2017-07-04T09:40:37.539Z",
+                    "phone": null,
+                    "requested_carrier_account": null
+                  },
+                  "location": null,
+                  "stock_running_low": true,
+                  "updated_at": "2017-10-13T09:13:49.172Z",
+                  "incoming_stock_level": 0,
+                  "physical_stock_level": 0,
+                  "available_stock_level": 0,
+                  "sellable_on_hand_value": 0.0
+                }
+              ],
+              "variant_option_specifics": [],
+              "variant_property_specifics": [],
+              "measurement_attributes": {
+                "id": 12587624,
+                "width": 0.0,
+                "height": 0.0,
+                "depth": 0.0,
+                "dimensions_unit": "cm"
+              },
+              "images": [],
+              "active_channels": [],
+              "channel_sellables": [],
+              "available_stock_level_at_all_warehouses": 0,
+              "stock_level_at_all_warehouses": 0,
+              "on_hand_value": 0.0,
+              "inventory": {
+                "infinite": false,
+                "physical_stock_level_at_all_warehouses": 0,
+                "allocated_stock_level_at_all_warehouses": 0,
+                "available_stock_level_at_all_warehouses": 0,
+                "incoming_stock_level_at_all_warehouses": 0
+              },
+              "weight": 10.0
+            }
+          ],
+          "channel_products": [],
+          "active_channels": [],
+          "tags": [],
+          "image": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+          "description": "Golden Retriever Dog - DescriptionUpdate",
+          "on_hand_value": 0.0,
+          "main_image_src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
+          "total_allocated_stock_level": 0,
+          "total_available_stock_level": 0,
+          "total_stock_level": 0,
+          "inventory": {
+            "infinite": false
+          }
+        }
 
 ### Delete [DELETE]
 

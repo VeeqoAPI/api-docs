@@ -151,8 +151,7 @@ Resources related to the orders in the API.
             ]
           }
         }
-        
-+ Response 200 
+         
         
 + Request To add a second item to the order, presuming initial request as above (application/json)
 
