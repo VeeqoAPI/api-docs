@@ -157,7 +157,7 @@ Resources related to the orders in the API.
         }
          
         
-+ Request To add a second item to the order, presuming initial request as above (application/json)
++ Request To add a second item to the order, presuming initial request as above. (application/json)
 
     + Headers
 
@@ -179,6 +179,22 @@ Resources related to the orders in the API.
                 "additional_options": "99 bottles sitting on the wall"
               }
             ]
+          }
+        }
+        
++ Request Update customer note, escape characters and punctuation are supported. This overwrites the previous note. (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+    
+        {
+          "order": {
+            "customer_note_attributes": { 
+              "text": "To Phil \n\n Have a great week ?! \n\n From Phil" 
+            }
           }
         }
 
