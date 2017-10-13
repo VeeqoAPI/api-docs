@@ -17,11 +17,13 @@ Resources related to the customers in the API.
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
 + Response 200 (application/json)
 
-        [{"id":123,"email":"customer@example.com","phone":"01792 720740","mobile":"07329023903","created_by_id":1602,"billing_address":{"id":142,"first_name":"John","last_name":"Doe","company":"","address1":"221 High Street Lane","address2":"Braithwell","city":"Swansea","country":"GB","state":"","zip":"SA1 1NW","phone":"","email":"customer@example.com"},"shipping_addresses":[{"id":11731634,"first_name":"John","last_name":"Doe","company":"","address1":"224 West Lane","address2":"Braithwell","city":"Swansea","country":"GB","state":"","zip":"SA1 1DP", "phone":""}]}]
+    + Body
+        
+        :[Response](responses/customers/show.json)
 
 ### Create a Customer [POST]
 
@@ -40,49 +42,20 @@ Resources related to the customers in the API.
         + zip: `SA1 1NW` (string)
 
 + Request (application/json)
+    
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
             
     + Body
 
-            {
-                "customer": { 
-                    "email": "customer@example.com",
-                    "phone": "01792 720740",
-                    "mobile": "07329023903",
-                    "billing_address_attributes": {
-                        "first_name": "John",
-                        "last_name": "Doe",
-                        "company": "FooBar Ltd",
-                        "address1": "221 High Street Lane",
-                        "address2": "",
-                        "city": "Swansea",
-                        "country": "GB",
-                        "zip": "SA1 1NW"
-                    }
-                }
-            }
+        :[Request](requests/customers/create.json)
 
 + Response 201 (application/json)
 
     + Body
 
-            {
-                "id": 123,
-                "email": "customer@example.com",
-                "phone": "01792 720740",
-                "mobile": "07329023903",
-                "billing_address_attributes": {
-                    "first_name": "Foo",
-                    "last_name": "Bar",
-                    "address1": "FooBar Lane",
-                    "address2": "",
-                    "city": "Swansea",
-                    "country": "GB",
-                    "zip": "SA1 1NW"
-                }
-            }
+        :[Response](responses/customers/show.json)
 
 ## Customer [/customers/{id}]
 
@@ -91,9 +64,18 @@ Resources related to the customers in the API.
 
 ### View Customer Detail [GET]
 
++ Request (application/json)
+
+    + Headers
+
+        x-api-key: 123
+            
+
 + Response 200 (application/json)
 
-        { "id":123, "email": "customer@example.com" }
+    + Body
+    
+        :[Response](responses/customers/show.json)
 
 ### Update Customer Detail [PUT]
 
@@ -113,11 +95,17 @@ Resources related to the customers in the API.
 
 + Request (application/json)
 
-            {
-                "customer": {
-                    "email": "customer@example.com"
-                }
-            }
+    + Headers
 
-+ Response 204 (application/json)
+        x-api-key: 123
+            
+    + Body
+    
+        :[Request](requests/customers/create.json)
+
++ Response 200 (application/json)
+
+    + Body
+        
+        :[Response](responses/customers/show.json)
 

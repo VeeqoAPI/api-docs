@@ -1,0 +1,17 @@
+{
+  "customer": {
+    "email": "Phil+API@veeqo.com",
+    "phone": "01792 720740",
+    "mobile": "07329023903",
+    "billing_address_attributes": {
+      "first_name": "Phil",
+      "last_name": "Reynolds",
+      "company": "Veeqo Ltd",
+      "address1": "Tech Hub",
+      "address2": "221 High Street",
+      "city": "Swansea",
+      "country": "GB",
+      "zip": "SA1 1NW"
+    }
+  }
+}
