@@ -103,8 +103,8 @@ Resources related to the products in the API.
 + Response 201 (application/json)
 
     + Body
-
-         :[Response](responses/products/show.json)
+    
+        :[Response](responses/products/show.json)
 
 ## Product [/products/{product_id}]
 
@@ -115,7 +115,7 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
 
-     :[Response](responses/products/show.json)
+    :[Response](responses/products/show.json)
 
 ### Update Product Detail [PUT]
 

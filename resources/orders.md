@@ -34,7 +34,7 @@ Resources related to the orders in the API.
             x-api-key: 123
 
 + Response 200 (application/json)
-            
+
     :[Response](responses/orders/show.json)
 
 
@@ -106,7 +106,7 @@ Resources related to the orders in the API.
             X-Request-Id:315d4b059982c66ba9150a552cca8ddc
 
     + Body
-
+    
         :[Response](responses/orders/show.json)
 
 ## Order [/orders/{order_id}]
@@ -122,8 +122,8 @@ Resources related to the orders in the API.
         + id: `323498` (number) - Order ID
 
 + Response 200 (application/json)
-
-     :[Response](responses/orders/show.json)
+    
+    :[Response](responses/orders/show.json)
 
 ### Update Order Detail [PUT]
 
