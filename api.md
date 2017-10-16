@@ -15,7 +15,7 @@ The [Developer Page](https://developer.veeqo.com) has access to all of the resou
 Follow the simple list below to get up and running with the Veeqo API.
 
 1. Get setup
-    * Signup for a [free trial Veeqo account](http://www.veeqo.com/signup)
+    * Register for a [Veeqo developer account](https://goo.gl/forms/mmGTgzadLvQVS6ml2)
     * [Get API credentials](/#introduction/authentication) for your app
 
 2. Explore
