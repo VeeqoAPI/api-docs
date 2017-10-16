@@ -1,15 +1,15 @@
 {
   "order": {
-    "channel_id": "3525",
-    "customer_id": "516208",
-    "deliver_to_id": "1086864",
-    "delivery_method_id": "92298",
+    "channel_id": "1234",
+    "customer_id": "123456",
+    "deliver_to_id": "1234567",
+    "delivery_method_id": "12345",
     "due_date": "",
     "line_items_attributes": [
       {
         "price_per_unit": 13.99,
         "quantity": "1",
-        "sellable_id": 1226615,
+        "sellable_id": 1234567,
         "tax_rate": 0,
         "additional_options": "Free Text"
       }
