@@ -57,50 +57,7 @@ Resources related to the products in the API.
 
     + Body
 
-            {
-              "product": {
-                "title": "Golden Retriever Dog - Title",
-                "description": "Golden Retriever Dog - Description",
-                "estimated_delivery": "",
-                "notes": "Golden Retriever Dog - Notes",
-                "product_brand_id": null,
-                "product_variants_attributes": [
-                  {
-                    "title": "Dog - ProdVariantTitle",
-                    "sku_code": "g-dog-1",
-                    "cost_price": "100",
-                    "price": "150",
-                    "min_reorder_level": "0",
-                    "quantity_to_reorder": "0",
-                    "tax_rate": "0",
-                    "upc_code": "",
-                    "model_number": "",
-                    "weight_grams": 10.0,
-                    "weight_unit": "kg"
-                  },
-                  {
-                    "cost_price": "100",
-                    "min_reorder_level": "0",
-                    "price": "150",
-                    "quantity_to_reorder": "0",
-                    "sku_code": "g-dog-2",
-                    "tax_rate": "0",
-                    "title": "Puppy - ProdVariantTitle",
-                    "upc_code": ""
-                  }
-                ],
-                "images_attributes": [
-                  {
-                    "src": "http://pluspng.com/img-png/dog-png-dog-png-image-267.png",
-                    "display_position": "1"
-                  },
-                  {
-                    "src": "http://www.pngmart.com/files/4/Golden-Retriever-Puppy-PNG-Image.png",
-                    "display_position": "2"
-                  }
-                ]
-              }
-            }
+        :[Request](requests/products/create.json)
 
 + Response 201 (application/json)
 
