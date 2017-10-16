@@ -21,6 +21,15 @@ Resources related to the customers in the API.
 
 + Response 200 (application/json)
 
+    + Headers
+    
+            Transfer-Encoding: chunked
+            X-Total-Count: 123
+            X-Total-Pages-Count: 12
+            X-Page-Index: 1
+            X-Per-Page: 10
+            X-Runtime: 0.0123
+            
     + Body
         
         :[Response](responses/customers/show.json)

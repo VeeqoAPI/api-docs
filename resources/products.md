@@ -24,6 +24,12 @@ Resources related to the products in the API.
 
 + Response 200 (application/json)
     
+    + Headers
+    
+                Transfer-Encoding: chunked
+                X-Total-Count: 7
+                X-Runtime: 0.123
+                
     + Body
 
         :[Response](responses/products/index.json)
@@ -61,6 +67,10 @@ Resources related to the products in the API.
 
 + Response 201 (application/json)
 
+    + Headers
+    
+            X-Runtime: 0.0123
+                
     + Body
     
         :[Response](responses/products/show.json)

@@ -81,7 +81,7 @@ Resources related to the orders in the API.
     + Headers
 
             Location:http://app.veeqo.dev/orders/:orderID
-            X-Runtime: 0.547814
+            X-Runtime: 0.0123
 
     + Body
     
