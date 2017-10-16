@@ -80,8 +80,8 @@ Resources related to the orders in the API.
 
     + Headers
 
-            Location:http://app.veeqo.dev/orders/447452
-            X-Request-Id:315d4b059982c66ba9150a552cca8ddc
+            Location:http://app.veeqo.dev/orders/:orderID
+            X-Runtime: 0.547814
 
     + Body
     
