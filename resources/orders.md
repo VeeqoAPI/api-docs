@@ -35,6 +35,15 @@ Resources related to the orders in the API.
 
 + Response 200 (application/json)
 
+    + Headers
+
+            Transfer-Encoding: chunked
+            X-Total-Count: 123
+            X-Total-Pages-Count: 12
+            X-Page-Index: 1
+            X-Per-Page: 10
+            X-Runtime: 0.0123
+
     + Body
     
         :[Response](responses/orders/show.json)
@@ -64,7 +73,7 @@ Resources related to the orders in the API.
 
     + Body
 
-         :[Request](requests/customers/create.json)
+         :[Request](requests/orders/create.json)
 
 
 + Response 201 (application/json)

@@ -26,7 +26,6 @@
     "customer_note_attributes": {
       "text": "Ring my doorbell"
     },
-
     "send_notification_email": false,
     "total_discounts": 0,
     "total_tax": 0
