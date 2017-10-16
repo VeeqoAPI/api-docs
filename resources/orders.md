@@ -64,40 +64,7 @@ Resources related to the orders in the API.
 
     + Body
 
-            {
-                "order": {
-                    "channel_id": "3525",
-                    "customer_id": "516208",                
-                    "deliver_to_id": "1086864",
-                    "delivery_method_id": "92298",
-                    "due_date": "",
-                    "line_items_attributes": [
-                        {
-                            "price_per_unit": 13.99,
-                            "quantity": "1",
-                            "sellable_id": 1226615,
-                            "tax_rate": 0,
-                            "additional_options": "Free Text"
-                        }
-                    ],
-                    "payment_attributes": {
-                        "payment_type": "bank_transfer",
-                        "reference_number": "123456789"
-                    },
-                    "employee_notes_attributes": [
-                        {
-                            "note": "Order has been received"
-                        }
-                    ],
-                    "customer_note_attributes": {
-                        "text": "Ring my doorbell"
-                    },
-                           
-                    "send_notification_email": false,
-                    "total_discounts": 0,
-                    "total_tax": 0
-                }
-            }
+         :[Request](requests/customers/create.json)
 
 
 + Response 201 (application/json)
