@@ -85,7 +85,7 @@ The live example can be [found here.](https://veeqo-dashboard.herokuapp.com/)
 
 ## Support
 
-### [Developer Forum](http://developer-forum.veeqo.com/)
+### [Developer Forum](https://developer-forum.veeqo.com/)
 
 The Veeqo developer forum is the place to go to talk about everything to do with developing on the Veeqo platform.
 Suggestions for API improvements, API support, conversations about the app store. They all live here.
