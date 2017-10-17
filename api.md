@@ -36,7 +36,7 @@ on the forum and update the docs when that goes live.
 3. Click on your user or add new employee (easier to track application activity)
 4. Click **Create/Update API Key**
 
-Your API credentials will de displayed on screen. Treat them like you would
+Your API credentials will displayed on screen. Treat them like you would
 any other password, since whoever has access to the API Key has full API access
 to the Veeqo account.
 
