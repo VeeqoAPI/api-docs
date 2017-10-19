@@ -90,7 +90,7 @@ Resources related to the orders in the API.
 ## Order [/orders/{order_id}]
 
 + Parameters
-    + order_id (integer) - ID of the Order
+    + order_id (integer, required) - ID of the Order
     
 
 ### View an Order Detail [GET]
