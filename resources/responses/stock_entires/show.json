@@ -1,0 +1,38 @@
+
+{
+  "id": 15171036,
+  "sellable_id": 14504036,
+  "warehouse_id": 22668,
+  "infinite": false,
+  "allocated_stock_level": 0,
+  "warehouse": {
+    "id": 22668,
+    "name": "My Warehouse",
+    "user_id": null,
+    "address_line_1": "",
+    "address_line_2": "",
+    "city": "",
+    "region": "",
+    "country": null,
+    "post_code": "",
+    "inventory_type_code": "wavg",
+    "default_min_reorder": 0,
+    "click_and_collect_enabled": false,
+    "click_and_collect_days": null,
+    "created_by_id": 23005,
+    "updated_by_id": null,
+    "deleted_at": null,
+    "deleted_by_id": null,
+    "created_at": "2017-07-04T09:40:37.539Z",
+    "updated_at": "2017-07-04T09:40:37.539Z",
+    "phone": null,
+    "requested_carrier_account": null
+  },
+  "location": null,
+  "stock_running_low": true,
+  "updated_at": "2017-10-19T09:07:29.759Z",
+  "incoming_stock_level": 0,
+  "physical_stock_level": 0,
+  "available_stock_level": 0,
+  "sellable_on_hand_value": 0.0
+}
