@@ -46,9 +46,9 @@ Resources related to the order tags in the API.
 
     + Body
 
-        {
-            "colour": "#993366",
-            "name": "Give me a name"
+        {   
+            "colour": "#009aed",   
+            "name": "Veeqo Tag" 
         }
 
 + Response 201 (application/json)
@@ -60,11 +60,11 @@ Resources related to the order tags in the API.
     + Body
 
         {
-            "colour": "#993366",
-            "company_id": 1422,
-            "id": 11159,
-            "name": "Give me a name",
-            "taggings_count": 0
+          "id": 144441,
+          "name": "Veeqo Tag",
+          "colour": "#009aed",
+          "company_id": 21314,
+          "taggings_count": 0
         }
 
 ## Tag [/tags/{tag_id}]
@@ -77,11 +77,11 @@ Resources related to the order tags in the API.
 + Response 200 (application/json)
 
         {
-            "colour": "#993366",
-            "company_id": 1422,
-            "id": 11159,
-            "name": "Give me a name",
-            "taggings_count": 0
+          "id": 144441,
+          "name": "Veeqo Tag",
+          "colour": "#009aed",
+          "company_id": 21314,
+          "taggings_count": 0
         }
 
 ### Delete [DELETE]

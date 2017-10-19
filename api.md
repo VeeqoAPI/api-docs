@@ -155,3 +155,5 @@ __Action Required:__ Try again after a few minutes. If the problem persists then
 :[Stock Entry Resources](resources/stock_entries.md)
 
 :[Tag Resources](resources/tags.md)
+
+:[Bulk Tagging Resources](resources/bulk_tagging.md)
