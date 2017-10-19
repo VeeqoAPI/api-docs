@@ -71,7 +71,8 @@ To allocate stock to an order, the item must be added as a line item within that
 
 + Response 200 (application/json)
 
-    +Body
+    + Body
+    
         :[Response](responses/allocations/update.json)
 
 ### Delete [DELETE]
