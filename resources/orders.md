@@ -31,18 +31,18 @@ Resources related to the orders in the API.
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
 + Response 200 (application/json)
 
     + Headers
 
-            Transfer-Encoding: chunked
-            X-Total-Count: 123
-            X-Total-Pages-Count: 12
-            X-Page-Index: 1
-            X-Per-Page: 10
-            X-Runtime: 0.0123
+        Transfer-Encoding: chunked
+        X-Total-Count: 123
+        X-Total-Pages-Count: 12
+        X-Page-Index: 1
+        X-Per-Page: 10
+        X-Runtime: 0.0123
 
     + Body
     
@@ -51,37 +51,72 @@ Resources related to the orders in the API.
 
 ### Create a New Order [POST]
 
-
 + Attributes
 
-    + order: (Order Base)
+    + order - Note: required IDs must be fetched before the order is created.
+    
+        + channel_id: `3525` (number, required)
+                
+            Store ID - See **Stores** Resource
+                
+        + deliver_to_id: `1086864` (number, required) - **Optional if** *deliver_to_attributes* are included.
+        
+            Customer's Shipping Address ID - See **Customers** Resource
+        
+        + delivery_method_id: `92298` (number, required)
+        
+            Delivery Method ID - See **Delivery Methods** Resource
+        
+        + due_date: `02/03/2017` (string, optional)
+        
+            Expected delivery date, appears in the order interface
+        
+        + total_discounts: `0` (number, optional)
+        
+            Total discounts price for the overall order
+            
+        + deliver_to_attributes (deliver_to_attributes) - Delivery Address Attributes. **Optional if** *deliver_to_id* is included. 
+            
+        + line_items_attributes (array, required) - Line item attributes for the line items of the order
+        
+            + (line_items_attributes)
+            
+        + customer_note_attributes (object, optional) - Notes from customer
+        
+            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
+            
+        + payment_attributes (object, optional) - Payment attributes, if the order has a payment
+                
+            + payment_type: `cash` (string, required)
+        
+                Type of payment
+        
+            + reference_number: `123456789` (string, optional)
+        
+                A reference string to refer to that payment
         
         + employee_notes_attributes (object, optional) - Internal notes attributes
         
             + note: `Order has been received` (string, optional) - Text for the note
-            
-        + customer_note_attributes (object, optional) - DETAILS COMING SOON
-        
-            
+           
     
-
 + Request Example create order. Everything with an ID must be created before this request. (application/json)
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
     + Body
 
-         :[Request](requests/orders/create.json)
+        :[Request](requests/orders/create.json)
 
 
 + Response 201 (application/json)
 
     + Headers
 
-            Location:http://app.veeqo.dev/orders/:orderID
-            X-Runtime: 0.0123
+        Location:http://app.veeqo.dev/orders/:orderID
+        X-Runtime: 0.0123
 
     + Body
     
@@ -108,7 +143,48 @@ Resources related to the orders in the API.
 ### Update Order Detail [PUT]
 
 + Attributes
-    + order: (Order Base)
+
+    + order: 
+    
+        + channel_id: `3525` (number)
+                
+            Store ID - See **Stores** Resource
+                
+        + deliver_to_id: `1086864` (number) - **Optional if** *deliver_to_attributes* are included.
+        
+            Customer's Shipping Address ID - See **Customers** Resource
+        
+        + delivery_method_id: `92298` (number)
+        
+            Delivery Method ID - See **Delivery Methods** Resource
+        
+        + due_date: `02/03/2017` (string, optional)
+        
+            Expected delivery date, appears in the order interface
+        
+        + total_discounts: `0` (number, optional)
+        
+            Total discounts price for the overall order
+            
+        + deliver_to_attributes (deliver_to_attributes) - Delivery Address Attributes. **Optional if** *deliver_to_id* is included. 
+            
+        + line_items_attributes (array) - Line item attributes for the line items of the order
+        
+            + (line_items_attributes)
+            
+        + customer_note_attributes (object, optional) - Notes from customer
+        
+            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
+            
+        + payment_attributes (object, optional) - Payment attributes, if the order has a payment
+                
+            + payment_type: `cash` (string)
+        
+                Type of payment
+        
+            + reference_number: `123456789` (string, optional)
+        
+                A reference string to refer to that payment
     
     
 
@@ -198,22 +274,22 @@ Resources related to the updating of order employee notes in the API.
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
     + Body
 
-            {
-                "note": {
-                    "text":  "Customer wants it very soon"
-                }
+        {
+            "note": {
+                "text":  "Customer wants it very soon"
             }
+        }
 
 
 + Response 201 (application/json)
 
     + Headers
 
-            X-Request-Id:315d4b059982c66ba9150a552cca8ddc
+        X-Request-Id:315d4b059982c66ba9150a552cca8ddc
 
     + Body
 
@@ -231,108 +307,76 @@ Resources related to the updating of order employee notes in the API.
 
 ## Data Structures
 
-### Order Base
-+ channel_id: `3525` (number, required)
+### Order Base (object)
 
-    Store ID - See Store Resource
+### deliver_to_attributes (object, required)
 
-+ deliver_to_id: `1086864` (number, optional) - **Required if** *deliver_to_attributes* are not included.
++ address1: `294 Queenstown Road` (string, optional)
 
-    Customer's Shipping Address ID - See Customer Resource
+    Address line 1
 
-+ delivery_method_id: `92298` (number, required)
++ address2: `Borough` (string, optional)
 
-    Delivery Method ID - See Delivery Method Resource
+    Address line 2
 
-+ due_date: `02/03/2017` (string, optional)
++ city: `London` (string, optional)
 
-    Expected delivery date, appears in the order interface
+    City
 
-+ total_discounts: `0` (number, optional)
++ company: `Fashion Co` (string, optional)
 
-    Total discounts price for the overall order
+    Company
 
-+ deliver_to_attributes (object, optional) - Delivery Address Attributes. **Required if** *deliver_to_id* is not included.
++ country: `GB` (string, optional)
 
-    + address1: `294 Queenstown Road` (string, optional)
+    Country (ISO-3 code)
 
-        Address line 1
++ customer_id: `516208` (number, required)
 
-    + address2: `Borough` (string, optional)
+    Customer's ID - See **Customers** Resource
 
-        Address line 2
++ first_name: `Sky` (string, optional)
 
-    + city: `London` (string, optional)
+    First name
 
-        City
++ last_name: `Schonhuber` (string, optional)
 
-    + company: `Fashion Co` (string, optional)
+    Last name
 
-        Company
++ phone: `07734450718` (string, optional)
 
-    + country: `GB` (string, optional)
+    Phone number
 
-        Country (ISO-3 code)
++ state: `London` (string, optional)
 
-    + customer_id: `516208` (number, required)
+    State
 
-        Customer's ID - See Customer Resource
++ zip: `S8 4LT` (string, optional)
 
-    + first_name: `Sky` (string, optional)
+    ZIP code
 
-        First name
+### line_items_attributes
 
-    + last_name: `Schonhuber` (string, optional)
++ sellable_id: `1226615` (number, required)
 
-        Last name
+    Sellable ID of the line item - See **Products** Resource
 
-    + phone: `07734450718` (string, optional)
++ price_per_unit: `13.99` (number, required)
 
-        Phone number
+    Price per each unit of the line item in company's local currency
 
-    + state: `London` (string, optional)
++ quantity: `1` (number, required)
 
-        State
+    Quantity of the line item
 
-    + zip: `S8 4LT` (string, optional)
++ tax_rate: `0.2` (number, optional)
 
-        ZIP code
-
-+ line_items_attributes (array, required) - Line item attributes for the line items of the order
-
-    + (object)
-
-        + sellable_id: `1226615` (number, required)
-
-            Sellable ID of the line item - See Product Resource
-
-        + price_per_unit: `13.99` (number, required)
-
-            Price per each unit of the line item in company's local currency
-
-        + quantity: `1` (number, required)
-
-            Quantity of the line item
-
-        + tax_rate: `0.2` (number, optional)
-
-            Tax rate of the line item
-            
-        + additional_options: `freetext` (string, optional)
-            
-            Custom field for any additional options
-
-+ payment_attributes (object, optional) - Payment attributes, if the order has a payment
-
-    + payment_type: `cash` (string, required)
-
-        Type of payment
-
-    + reference_number: `123456789` (string, optional)
-
-        A reference string to refer to that payment
+    Tax rate of the line item
+    
++ additional_options: `freetext` (string, optional)
+    
+    Custom field for any additional options
         
-
 ### Order Response Base
 
 + allocated_completely: `true` (boolean)
