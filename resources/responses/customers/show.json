@@ -3,7 +3,7 @@
   "email": "Phil+API@veeqo.com",
   "phone": "01792 720740",
   "mobile": "07329023903",
-  "created_by_id": 12305,
+  "created_by_id": 12005,
   "billing_address": {
     "id": 12345678,
     "first_name": "Phil",
@@ -18,6 +18,32 @@
     "phone": null,
     "email": null
   },
-  "shipping_addresses": [],
-  "last_used_shipping_address": null
+  "shipping_addresses": [
+    {
+      "id": 12345678,
+      "first_name": "Phil",
+      "last_name": "Reynolds",
+      "company": "Veeqo Ltd",
+      "address1": "Tech Hub",
+      "address2": "221 High Street",
+      "city": "Swansea",
+      "country": "GB",
+      "state": "",
+      "zip": "SA1 1NW",
+      "phone": ""
+    }
+  ],
+  "last_used_shipping_address": {
+    "id": 12345678,
+    "first_name": "Phil",
+    "last_name": "Reynolds",
+    "company": "Veeqo Ltd",
+    "address1": "Tech Hub",
+    "address2": "221 High Street",
+    "city": "Swansea",
+    "country": "GB",
+    "state": "",
+    "zip": "SA1 1NW",
+    "phone": ""
+  }
 }
