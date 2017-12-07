@@ -4,6 +4,7 @@
     "customer_id": "123456",
     "deliver_to_id": "1234567",
     "delivery_method_id": "12345",
+    "number": "123456abc",
     "due_date": "",
     "line_items_attributes": [
       {
@@ -18,11 +19,6 @@
       "payment_type": "bank_transfer",
       "reference_number": "123456789"
     },
-    "employee_notes_attributes": [
-      {
-        "note": "Order has been received"
-      }
-    ],
     "customer_note_attributes": {
       "text": "Ring my doorbell"
     },

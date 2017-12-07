@@ -94,10 +94,10 @@ Resources related to the orders in the API.
             + reference_number: `123456789` (string, optional)
         
                 A reference string to refer to that payment
+                
+        + number: `123456abc` (string, optional) 
         
-        + employee_notes_attributes (object, optional) - Internal notes attributes
-        
-            + note: `Order has been received` (string, optional) - Text for the note
+            External order number
            
     
 + Request Example create order. Everything with an ID must be created before this request. (application/json)
