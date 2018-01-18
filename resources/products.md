@@ -2,15 +2,16 @@
 
 Resources related to the products in the API.
 
-## Product Collection [/products{?since_id,created_at_min,updated_at_min,page_size,page,query}]
+## Product Collection [/products{?since_id,warehouse_id,created_at_min,updated_at_min,page_size,page,query}]
 
 ### List All Products [GET]
 
 + Parameters
     + since_id: `12345` (integer, optional) - Restrict results to after specified ID
+    + warehouse_id: `12345` (integer, optional) - Restrict results to products with stock in specific warehouse
     + created_at_min: `2016-03-01 11:10:01` (string, optional) - Show entities created after date (format: YYYY-MM-DD HH:MM:SS)
     + updated_at_min: `2016-03-01 11:10:01` (string, optional) - Show entities updated after date (format: YYYY-MM-DD HH:MM:SS)
-    + page_size: `25` (integer, optional) - Amount of results
+    + page_size: `25` (integer, optional) - Amount of results per page
         + Default: `12`
     + page: `1` (integer, optional) - Page to show
         + Default: `1`
