@@ -1,6 +1,7 @@
 # Group Orders
 
-Resources related to the orders in the API.
+Resources related to the orders in the API. 
+Few important things to note. When sending a create order POST request, everything with an ID must be created before the request.
 
 ## Order Collection [/orders{?since_id,created_at_min,updated_at_min,page_size,page,query,status,tags,allocated_at}]
 
@@ -89,7 +90,7 @@ Resources related to the orders in the API.
                 
             + payment_type: `cash` (string, required)
         
-                Type of payment
+                Type of payment - required if order has a payment
         
             + reference_number: `123456789` (string, optional)
         
@@ -100,7 +101,7 @@ Resources related to the orders in the API.
             External order number
            
     
-+ Request Example create order. Everything with an ID must be created before this request. This example shows the creation of a new customer at the same time as the order and includes all of the fields that you can pass when creating an order. (application/json)
++ Request Everything with an ID must be created before this request. (application/json)
 
     + Headers
 
@@ -109,6 +110,36 @@ Resources related to the orders in the API.
     + Body
 
         :[Request](requests/orders/create_full.json)
+        
++ Request Minimum number of IDs required to created order. Customer is created at the same time as order. (application/json) 
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+
+        :[Request](requests/orders/create_full_with_new_customer.json)
+        
++ Request Minimum data to send on create order request. (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+
+        :[Request](requests/orders/create_minimum.json)
+        
++ Request Minimum data to create order and new customer (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+
+        :[Request](requests/orders/create_minimum_with_new_customer.json)
 
 
 + Response 201 (application/json)

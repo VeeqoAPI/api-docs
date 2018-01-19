@@ -1,10 +1,8 @@
 {
   "order": {
     "channel_id": 45465,
-    "customer_id": 12137952,
-    "deliver_to_id": 26465395,
     "due_date": "31/01/2018",
-    "number": "rdr1236",
+    "number": "rdr1234",
     "send_notification_email": true,
     "line_items_attributes": [{
       "price_per_unit": "75.000",
@@ -27,6 +25,39 @@
     "payment_attributes": {
       "payment_type": "paypal",
       "reference_number": "PPP1234"
+    },
+    "customer_attributes": {
+      "phone": "07891234567",
+      "mobile": "07891234567",
+      "email": "baggins@ringbearers.org",
+      "billing_address_attributes": {
+        "id": "",
+        "first_name": "Frodo",
+        "last_name": "Baggins",
+        "company": "The Ring Bearers",
+        "address1": "The New Bag End",
+        "address2": "1st Avenue",
+        "city": "Valinor",
+        "state": "The Undying Lands",
+        "zip": "VA1 1NB",
+        "country": "GB",
+        "phone": "07891234567",
+        "email": "baggins@ringbearers.org"
+      }
+    },
+    "deliver_to_attributes": {
+      "first_name": "Samwise",
+      "last_name": "Gamgee",
+      "company": "The Fellowship",
+      "address1": "Bag End",
+      "address2": "Hobbiton",
+      "city": "Shire",
+      "state": "Middle Earth",
+      "zip": "SH1 1BG",
+      "country": "GB",
+      "phone": "07891234567",
+      "email": "Gamgee@fellowship.net",
+      "id": ""
     },
     "customer_note_attributes": {
       "text": "Please tell Sam to look after this puppy. --This is a customer note--"

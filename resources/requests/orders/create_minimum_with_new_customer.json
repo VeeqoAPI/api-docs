@@ -1,0 +1,36 @@
+{
+  "order": {
+    "channel_id": 45465,
+    "line_items_attributes": [{
+      "price_per_unit": "75.000",
+      "quantity": "1",
+      "sellable_id": 13847534
+    }],
+    "delivery_method_id": 171784,
+    "payment_attributes": {
+      "payment_type": "paypal"
+    },
+    "customer_attributes": {
+      "phone": "07891234567",
+      "email": "baggins@ringbearers.org",
+      "billing_address_attributes": {
+        "first_name": "Frodo",
+        "last_name": "Baggins",
+        "address1": "The New Bag End",
+        "city": "Valinor",
+        "state": "The Undying Lands",
+        "zip": "VA1 1NB",
+        "country": "GB"
+      }
+    },
+    "deliver_to_attributes": {
+      "first_name": "Frodo",
+      "last_name": "Baggins",
+      "address1": "The New Bag End",
+      "city": "Valinor",
+      "state": "The Undying Lands",
+      "zip": "VA1 1NB",
+      "country": "GB"
+    }
+  }
+}
