@@ -100,7 +100,7 @@ Resources related to the orders in the API.
             External order number
            
     
-+ Request Example create order. Everything with an ID must be created before this request. (application/json)
++ Request Example create order. Everything with an ID must be created before this request. This example shows the creation of a new customer at the same time as the order and includes all of the fields that you can pass when creating an order. (application/json)
 
     + Headers
 
@@ -108,7 +108,7 @@ Resources related to the orders in the API.
 
     + Body
 
-        :[Request](requests/orders/create.json)
+        :[Request](requests/orders/create_full.json)
 
 
 + Response 201 (application/json)
@@ -372,6 +372,8 @@ Resources related to the updating of order employee notes in the API.
 + tax_rate: `0.2` (number, optional)
 
     Tax rate of the line item
+    
++ 
     
 + additional_options: `freetext` (string, optional)
     
