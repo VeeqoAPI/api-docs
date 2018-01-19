@@ -71,6 +71,10 @@ Few important things to note. When sending a create order POST request, everythi
         + due_date: `02/03/2017` (string, optional)
         
             Expected delivery date, appears in the order interface
+            
+        + number: `123456abc` (string, optional) 
+        
+            External order number
         
         + total_discounts: `0` (number, optional)
         
@@ -82,12 +86,8 @@ Few important things to note. When sending a create order POST request, everythi
         
             + (line_items_attributes)
             
-        + customer_note_attributes (object, optional) - Notes from customer
-        
-            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
-            
         + payment_attributes (object, optional) - Payment attributes, if the order has a payment
-                
+                        
             + payment_type: `cash` (string, required)
         
                 Type of payment - required if order has a payment
@@ -95,10 +95,16 @@ Few important things to note. When sending a create order POST request, everythi
             + reference_number: `123456789` (string, optional)
         
                 A reference string to refer to that payment
-                
-        + number: `123456abc` (string, optional) 
+            
+        + customer_note_attributes (object, optional) - Notes from customer
         
-            External order number
+            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
+        
+        + employee_note_attributes (array, optional) - Notes from employee
+                
+            + note: `Order from special customer` (string, optional) - Text for the note
+                                 
+
            
     
 + Request Everything with an ID must be created before this request. (application/json)
