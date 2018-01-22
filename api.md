@@ -33,12 +33,21 @@ on the forum and update the docs when that goes live.
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
-3. Click on your user or add new employee (easier to track application activity)
+3. Click on your user or **+ New Employee** (easier to track application activity)
 4. Click **Create/Update API Key**
+5. Save your API Key, it will not be shown again!
 
 Your API credentials will displayed on screen. Treat them like you would
 any other password, since whoever has access to the API Key has full API access
 to the Veeqo account.
+
+We have recently made a change that means that the API key will only be displayed 
+when it is first created to increase security. We recommend you create a new user 
+for each integration that needs an API key and store it securely.
+
+If you lose an API key, you can always create a new one.
+
+This information is also availabe in the [Veeqo Help Guide](https://help.veeqo.com/hc/en-us/articles/115005403265-API-Key)
 
 ### Using API credentials
 
