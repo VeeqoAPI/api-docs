@@ -40,6 +40,7 @@ Resources related to the customers in the API.
     + email: `customer@example.com` (string, required)
     + phone: `01792 720740` (string)
     + mobile: `07329023903` (string)
+    + notes: `This is some extra info about the customer. 255 Character Limit` (String)
     + billing_address_attributes:
         + first_name: `John` (string)
         + last_name: `Doe` (string)

@@ -3,6 +3,7 @@
     "email": "Phil+API@veeqo.com",
     "phone": "01792 720740",
     "mobile": "07329023903",
+    "notes": "This person buys things",
     "billing_address_attributes": {
       "first_name": "Phil",
       "last_name": "Reynolds",
