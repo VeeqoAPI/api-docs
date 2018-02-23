@@ -98,11 +98,11 @@ Few important things to note. When sending a create order POST request, everythi
             
         + customer_note_attributes (object, optional) - Notes from customer
         
-            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
+            + text: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
         
         + employee_note_attributes (array, optional) - Notes from employee
                 
-            + note: `Order from special customer` (string, optional) - Text for the note
+            + text: `Order from special customer` (string, optional) - Text for the note
                                  
 
            
