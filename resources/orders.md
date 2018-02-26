@@ -76,6 +76,10 @@ Few important things to note. When sending a create order POST request, everythi
         
             External order number
         
+        + send_notification_email: `true` (boolean, optional)
+        
+            Send order confirmation email
+        
         + total_discounts: `0` (number, optional)
         
             Total discounts price for the overall order
@@ -198,14 +202,6 @@ Few important things to note. When sending a create order POST request, everythi
         + due_date: `02/03/2017` (string, optional)
         
             Expected delivery date, appears in the order interface
-            
-        + number: `abc12345` (string, optional)
-         
-            External order number
-            
-        + send_notification_email: `true` (boolean, optional)
-        
-            Send order confirmation email.
             
         + total_discounts: `0` (number, optional)
                 
@@ -423,7 +419,7 @@ Resources related to the updating of order employee notes in the API.
 
     Tax rate of the line item
     
-+ taxless_discount_per_unit `3.99` (number, optional)
++ taxless_discount_per_unit: `3.99` (number, optional)
 
     How much discount is applied to each item in the order _before_ tax
     
