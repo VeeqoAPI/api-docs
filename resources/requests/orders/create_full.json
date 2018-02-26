@@ -11,13 +11,15 @@
       "taxless_discount_per_unit": "0.00",
       "quantity": "1",
       "tax_rate": 0.2,
-      "sellable_id": 13847534
+      "sellable_id": 13847534,
+      "additional_options": "This thing is a thing"
     }, {
       "price_per_unit": "150.000",
       "taxless_discount_per_unit": "30.00",
       "quantity": "1",
       "tax_rate": 0.2,
-      "sellable_id": 14358568
+      "sellable_id": 14358568,
+      "additional_options": "This thing is also a thing"
     }],
     "additional_order_level_taxless_discount": "19.50",
     "delivery_method_id": 171784,

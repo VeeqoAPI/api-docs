@@ -198,9 +198,17 @@ Few important things to note. When sending a create order POST request, everythi
         + due_date: `02/03/2017` (string, optional)
         
             Expected delivery date, appears in the order interface
+            
+        + number: `abc12345` (string, optional)
+         
+            External order number
+            
+        + send_notification_email: `true` (boolean, optional)
         
+            Send order confirmation email.
+            
         + total_discounts: `0` (number, optional)
-        
+                
             Total discounts price for the overall order
             
         + deliver_to_attributes (deliver_to_attributes) - Delivery Address Attributes. **Optional if** *deliver_to_id* is included. 
@@ -208,10 +216,6 @@ Few important things to note. When sending a create order POST request, everythi
         + line_items_attributes (array) - Line item attributes for the line items of the order
         
             + (line_items_attributes)
-            
-        + customer_note_attributes (object, optional) - Notes from customer
-        
-            + note: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
             
         + payment_attributes (object, optional) - Payment attributes, if the order has a payment
                 
@@ -222,6 +226,15 @@ Few important things to note. When sending a create order POST request, everythi
             + reference_number: `123456789` (string, optional)
         
                 A reference string to refer to that payment
+        
+        + customer_note_attributes (object, optional) - Notes from customer
+                
+            + text: `Ring the doorbell the leave in secure location` (string, optional) - Text for the note
+            
+        + employee_notes_attributes (array, optional) - Internal notes from employees
+        
+            + text: `Order needs special packaging` (string, optional) - Text for the note
+                    
     
     
 
@@ -410,7 +423,9 @@ Resources related to the updating of order employee notes in the API.
 
     Tax rate of the line item
     
-+ 
++ taxless_discount_per_unit `3.99` (number, optional)
+
+    How much discount is applied to each item in the order _before_ tax
     
 + additional_options: `freetext` (string, optional)
     
