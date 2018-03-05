@@ -49,8 +49,8 @@ Follow the simple list below to get up and running with the Veeqo API.
 
 Authentication is required for your apps in order for them to access data in Veeqo. There are currently two ways to authenticate your application:
 
-1. [OAuth](/#introduction/OAuth)
-2. [API keys](/#introduction/Get-API-Key)
+1. OAuth
+2. API keys
 
 API keys are going to be depreciated in the future. If you are building a new application, please use OAuth. A guide on getting set up with OAuth can be found on the [Developer Forum](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95).
 
