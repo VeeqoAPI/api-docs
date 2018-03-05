@@ -5,31 +5,56 @@ HOST: https://api.veeqo.com/
 
 Everything you need to build the world's most powerful tools for ecommerce retailers.
 
-## [Developer Page](https://developer.veeqo.com)
+The Veeqo API allows you to integrate any external application or service with a retailer's Veeqo. You can use Veeqo's
+API to do just about anything you can do in the Veeqo Web App using the programming language of your choice. 
+
+The Veeqo API is based on RESTful principles, using predictable and explorable URLs, HTTP requests and JSON responses.
+
+There are two ways of authenticating your app with Veeqo. The Veeqo API supports [OAuth2](https://oauth.net/2/) and 
+legacy API Keys. API keys are going to be depreciated at some point as OAuth is better in literally every way. 
+There is more information on this in the [Authentication](/#introduction/authentication) section below.
+
+## [Developer Central](https://developer.veeqo.com)
 
 We're working hard at Veeqo to make developing on top of our API the best experience possible. 
-The [Developer Page](https://developer.veeqo.com) has access to all of the resources you'll need.
+[Developer Central](https://developer.veeqo.com) has access to all of the resources you'll need, and the 
+[Developer Forum](https://developer-forum.veeqo.com) is a growing community of developers who are using the API and 
+building on the Veeqo platform.
 
 ## Getting Started
 
 Follow the simple list below to get up and running with the Veeqo API.
 
-1. Get setup
+1. Get a Veeqo Account
     * Register for a [Veeqo developer account](https://goo.gl/forms/mmGTgzadLvQVS6ml2)
-    * [Get API credentials](/#introduction/authentication) for your app
-
-2. Explore
+2. Register Your Application
+    * Set up some [API Authentication](/#introduction/authentication) for your app
+3. Explore
     * Use the [API previewer](/#reference/orders) to see what each endpoint does
     * Download some [code samples](/#introduction/code-samples)
+    * Use a tool like [Restlet](https://restlet.com/) or [Postman](https://www.getpostman.com/) to send some test requests
+4. Get Help and Learn More  
+    * Check out the [Developer Forum](https://developer-forum.veeqo.com)
+5. Build and test your app.
+    * Do your thing the way you do best!
+6. Launch your app on the [Veeqo Marketplace](https://marletplace.veeqo.com)
+    * Let any Veeqo retailer use your awesome application!
 
 ## Authentication
 
 Authentication is required for your apps in order for them to access data in Veeqo.
 
-Authentication is going to improve very soon with the addition of OAuth. We'll post 
-on the forum and update the docs when that goes live. 
+There are currently two ways to authenticate your application, API Keys and OAuth. API keys are going to be depreciated 
+in the future, if you are building a new application, please use OAuth. A guide on getting set up with OAuth can be found 
+on the [Developer Forum](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95). 
 
-### Get API credentials
+### OAuth2
+
+A more detailed explanation of using OAuth will be coming here soon. 
+
+In the mean time, check out [this post](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95) on the Developer Forum
+
+### Get API Key
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
@@ -47,9 +72,9 @@ for each integration that needs an API key and store it securely.
 
 If you lose an API key, you can always create a new one.
 
-This information is also availabe in the [Veeqo Help Guide](https://help.veeqo.com/hc/en-us/articles/115005403265-API-Key)
+This information is also available in the [Veeqo Help Guide](https://help.veeqo.com/hc/en-us/articles/115005403265-API-Key)
 
-### Using API credentials
+### Using API Key
 
 Simply include `x-api-key` into request header, for example:
 
