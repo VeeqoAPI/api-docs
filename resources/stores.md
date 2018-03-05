@@ -18,11 +18,17 @@ Resources related to the stores in the API.
 
     + Headers
 
-            x-api-key: 123
+        x-api-key: 123
 
 + Response 200 (application/json)
 
-        [{"id": 123}]
+    + Headers
+    
+        X-Runtime: 0.0123      
+    
+    + Body
+    
+       :[Response](responses/stores/index.json)
 
 ### Create a Store [POST]
 
@@ -35,6 +41,12 @@ Resources related to the stores in the API.
 
 + Request (application/json)
 
+    + Headers
+
+        x-api-key: 123
+        
+    + Body
+
         {
             "name": "Phone",
             "type_code": "direct"
@@ -42,12 +54,13 @@ Resources related to the stores in the API.
 
 + Response 201 (application/json)
 
+    + Headers
+    
+        X-Runtime: 0.0123      
+    
     + Body
-
-            {
-                "id": 123,
-                "name": "Phone"
-            }
+    
+        :[Response](responses/stores/show.json)
 
 ## Store [/channels/{id}]
 
@@ -56,17 +69,37 @@ Resources related to the stores in the API.
 
 ### View Store Detail [GET]
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
-        { "name": "Phone" }
+    + Headers
+    
+        X-Runtime: 0.0123      
+    
+    + Body
+    
+        :[Response](responses/stores/show.json)
 
 ### Update Store Detail [PUT]
 
 + Request (application/json)
 
-        { "name": "Phone" }
+    + Headers
+
+        x-api-key: 123
+        
+    + Body
+    
+       { "name": "Phone" }
 
 + Response 204 (application/json)
+
+    + Headers
+    
+        X-Runtime: 0.0123      
+    
+    + Body
+    
+        :[Response](responses/stores/show.json)
 
 ### Delete [DELETE]
 
