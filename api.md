@@ -5,14 +5,18 @@ HOST: https://api.veeqo.com/
 
 The Veeqo API gives everything you need to build the world's most powerful tools for ecommerce retailers.
 
-You can integrate any external application or service with a retailer's Veeqo account. This allows you to do just about anything you can do in the Veeqo Web App using the programming language of your choice.
+You can integrate any external application or service with a retailer's Veeqo account. This allows you to do just about 
+anything you can do in the Veeqo Web App using the programming language of your choice.
 
 Our API is based on RESTful principles, using predictable and explorable URLs, HTTP requests and JSON responses.
 
 There are two ways of authenticating your app with Veeqo:
+
 1. [OAuth2](https://oauth.net/2/) authentication.
 2. Legacy API Keys.
-API keys are going to be depreciated at some point as we believe OAuth is the better option. There is more information on this in the [Authentication](/#introduction/authentication) section below.
+
+API keys are going to be depreciated at some point as we believe OAuth is the better option. There is more information 
+on this in the [Authentication](/#introduction/authentication) section below.
 
 
 ## [Developer Central](https://developer.veeqo.com)
@@ -29,7 +33,7 @@ Follow the simple list below to get up and running with the Veeqo API.
 1. Get a Veeqo Account
     * Register for a [Veeqo developer account](https://goo.gl/forms/mmGTgzadLvQVS6ml2)
 2. Register Your Application
-    * Set up some [API Authentication](/#introduction/authentication) for your app
+    * Set up some [API Authentication](#introduction/authentication) for your app
 3. Explore
     * Use the [API previewer](/#reference/orders) to see what each endpoint does
     * Download some [code samples](/#introduction/code-samples)
@@ -38,14 +42,16 @@ Follow the simple list below to get up and running with the Veeqo API.
     * Check out the [Developer Forum](https://developer-forum.veeqo.com)
 5. Build and test your app.
     * Do your thing the way you do best!
-6. Launch your app on the [Veeqo Marketplace](https://marletplace.veeqo.com)
+6. Launch your app on the [Veeqo Marketplace](https://marketplace.veeqo.com)
     * Let any Veeqo retailer use your awesome application!
 
 ## Authentication
 
 Authentication is required for your apps in order for them to access data in Veeqo. There are currently two ways to authenticate your application:
+
 1. [OAuth](/#introduction/OAuth)
 2. [API keys](/#introduction/Get-API-Key)
+
 API keys are going to be depreciated in the future. If you are building a new application, please use OAuth. A guide on getting set up with OAuth can be found on the [Developer Forum](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95).
 
 ### OAuth
@@ -54,7 +60,7 @@ A more detailed explanation of using OAuth will be coming here soon.
 
 In the mean time, check out [this post](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95) on the Developer Forum
 
-### Get API Key
+### Get API Key 
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
