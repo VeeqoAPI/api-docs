@@ -60,11 +60,15 @@ Few important things to note. When sending a create order POST request, everythi
                 
             Store ID - See **Stores** Resource
             
-        + customer_id `123456` (number, required) - **Optional if** *customer_attributes* are included.
+        + customer_id: `123456` (number, required)
+        
+            **Optional if** *customer_attributes* are included. (See Examples Below)
         
             Customer ID - See **Customers** Resource
                 
-        + deliver_to_id: `1086864` (number, required) - **Optional if** *deliver_to_attributes* are included.
+        + deliver_to_id: `1086864` (number, required)
+        
+            **Optional if** *deliver_to_attributes* are included.
         
             Customer's Shipping Address ID - See **Customers** Resource
         
