@@ -59,6 +59,10 @@ Few important things to note. When sending a create order POST request, everythi
         + channel_id: `3525` (number, required)
                 
             Store ID - See **Stores** Resource
+            
+        + customer_id `123456` (number, required) - **Optional if** *customer_attributes* are included. (see examples)
+        
+            Customer ID - See **Customers** Resource
                 
         + deliver_to_id: `1086864` (number, required) - **Optional if** *deliver_to_attributes* are included.
         
