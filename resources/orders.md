@@ -60,7 +60,7 @@ Few important things to note. When sending a create order POST request, everythi
                 
             Store ID - See **Stores** Resource
             
-        + customer_id `123456` (number, required) - **Optional if** *customer_attributes* are included. (see examples)
+        + customer_id `123456` (number, required) - **Optional if** *customer_attributes* are included.
         
             Customer ID - See **Customers** Resource
                 
