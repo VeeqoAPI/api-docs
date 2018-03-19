@@ -233,10 +233,22 @@ Few important things to note. When sending a create order POST request, everythi
             + (line_items_attributes)
             
         + payment_attributes (object, optional) - Payment attributes, if the order has a payment
-                
-            + payment_type: `cash` (string)
+                                  
+            + payment_type: `cash` (string, required)
         
-                Type of payment
+                Type of payment - required if *payment_attributes* are included.
+                
+                List of accepted payment types (*variable_name*: Display Name)
+                
+                + *none*: "None"
+                + *cash*: "Cash"
+                + *credit_card*: "Credit Card"
+                + *bank_transfer*: "Bank Transfer"
+                + *paypal*: "Paypal"
+                + *paypal_express*: "Paypal Express"
+                + *sagepay*: "Sagepay"  
+                + *checkmo*: "Check/Money order"
+                + *online_finance*: "Online Finance"
         
             + reference_number: `123456789` (string, optional)
         
@@ -252,7 +264,6 @@ Few important things to note. When sending a create order POST request, everythi
                     
     
     
-
 + Request To update additional_options in line_item_attributes (application/json)
 
     + Headers
