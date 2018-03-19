@@ -102,7 +102,19 @@ Few important things to note. When sending a create order POST request, everythi
                         
             + payment_type: `cash` (string, required)
         
-                Type of payment - required if order has a payment
+                Type of payment - required if *payment_attributes* are included.
+                
+                List of accepted payment types (*variable_name*: Display Name)
+                
+                + *none*: "None"
+                + *cash*: "Cash"
+                + *credit_card*: "Credit Card"
+                + *bank_transfer*: "Bank Transfer"
+                + *paypal*: "Paypal"
+                + *paypal_express*: "Paypal Express"
+                + *sagepay*: "Sagepay"  
+                + *checkmo*: "Check/Money order"
+                + *online_finance*: "Online Finance"
         
             + reference_number: `123456789` (string, optional)
         
@@ -117,7 +129,6 @@ Few important things to note. When sending a create order POST request, everythi
             + text: `Order from special customer` (string, optional) - Text for the note
                                  
 
-           
     
 + Request Everything with an ID must be created before this request. (application/json)
 
