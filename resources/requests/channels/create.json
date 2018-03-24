@@ -1,0 +1,9 @@
+{
+  "name": "API-ISK",
+  "type_code": "direct",
+  "currency_code": "ISK",
+  "default_warehouse_id": 22668,
+  "short_name": "I1",
+  "email": "ISK-test@veeqo.com",
+  "veeqo_dictates_stock_level": "false"
+}

@@ -38,6 +38,11 @@ Resources related to the stores in the API.
         + Members
             + `direct`
             + `retail`
+    + currency_code: `GBP` (enum[string], optional)
+    + default_warehouse_id `12345` (number, optional)
+    + short_name `AA` (string, optional)
+    + email `email@veeqo.com` (string, optional)
+    + veeqo_dictates_stock_level `true` (boolean, optional)
 
 + Request (application/json)
 
@@ -47,10 +52,7 @@ Resources related to the stores in the API.
         
     + Body
 
-        {
-            "name": "Phone",
-            "type_code": "direct"
-        }
+        :[Request](requests/channels/create.json)
 
 + Response 201 (application/json)
 
