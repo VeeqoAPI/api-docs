@@ -167,7 +167,7 @@ If you can't find what you're looking for, have any problems or suggestions just
 
 Here are a few useful reference files.
 
-[Common Currencies](references/common_currency.json)
-[Countries](references/countries.json)
-[Order Statuses](references/order_statuses.json)
+[Common Currencies](resources/references/common_currency.json)
+[Countries](resources/references/countries.json)
+[Order Statuses](resources/references/order_statuses.json)
 
