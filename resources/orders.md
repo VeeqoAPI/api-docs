@@ -405,7 +405,7 @@ Resources related to the updating of order employee notes in the API.
 
 + country: `GB` (string, optional)
 
-    Country (ISO-3 code)
+    Country (ISO-2 code)
 
 + customer_id: `516208` (number, required)
 

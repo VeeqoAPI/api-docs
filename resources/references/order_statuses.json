@@ -1,0 +1,9 @@
+[
+  "awaiting_payment",
+  "awaiting_stock",
+  "awaiting_fulfillment",
+  "shipped",
+  "on_hold",
+  "cancelled",
+  "refunded"
+]

@@ -132,7 +132,7 @@ Suggestions for API improvements, API support, conversations about the app store
 
 If you can't find what you're looking for, have any problems or suggestions just post on the forum.
 
-## HTTP Codes
+
 :[HTTP Codes](resources/http_codes.md)
 
 :[Order Resources](resources/orders.md)
@@ -162,3 +162,12 @@ If you can't find what you're looking for, have any problems or suggestions just
 :[Tag Resources](resources/tags.md)
 
 :[Bulk Tagging Resources](resources/bulk_tagging.md)
+
+## References
+
+Here are a few useful reference files.
+
+[Common Currencies](references/common_currency.json)
+[Countries](references/countries.json)
+[Order Statuses](references/order_statuses.json)
+
