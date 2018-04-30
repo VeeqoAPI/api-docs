@@ -163,11 +163,6 @@ If you can't find what you're looking for, have any problems or suggestions just
 
 :[Bulk Tagging Resources](resources/bulk_tagging.md)
 
-## References
+:[Other Resources](resources/other_files.md)
 
-Here are a few useful reference files.
-
-[Common Currencies](resources/references/common_currency.json)
-[Countries](resources/references/countries.json)
-[Order Statuses](resources/references/order_statuses.json)
 
