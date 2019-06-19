@@ -42,6 +42,10 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
 
 **19**: Canada Post
 
+**23**: Hermes World
+
+**24**: DHL DE (Deutsche Post)
+
 ## Shipment Collection [/shipments]
 
 ### Create a Shipment [POST]
