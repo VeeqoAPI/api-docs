@@ -137,6 +137,8 @@ If you can't find what you're looking for, have any problems or suggestions just
 
 :[Order Resources](resources/orders.md)
 
+:[Returns_Resources](resources/returns.md)
+
 :[Allocation Resources](resources/allocations.md)
 
 :[Product Resources](resources/products.md)
