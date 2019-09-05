@@ -5,7 +5,7 @@ HOST: https://api.veeqo.com/
 
 The Veeqo API gives everything you need to build the world's most powerful tools for ecommerce retailers.
 
-You can integrate any external application or service with a retailer's Veeqo account. This allows you to do just about 
+You can integrate any external application or service with a retailer's Veeqo account. This allows you to do just about
 anything you can do in the Veeqo Web App using the programming language of your choice.
 
 Our API is based on RESTful principles, using predictable and explorable URLs, HTTP requests and JSON responses.
@@ -15,15 +15,15 @@ There are two ways of authenticating your app with Veeqo:
 1. [OAuth2](https://oauth.net/2/) authentication.
 2. Legacy API Keys.
 
-API keys are going to be depreciated at some point as we believe OAuth is the better option. There is more information 
+API keys are going to be depreciated at some point as we believe OAuth is the better option. There is more information
 on this in the [Authentication](/#introduction/authentication) section below.
 
 
 ## [Developer Central](https://developer.veeqo.com)
 
-We're working hard at Veeqo to make developing on top of our API the best experience possible. 
-[Developer Central](https://developer.veeqo.com) has access to all of the resources you'll need, and the 
-[Developer Forum](https://developer-forum.veeqo.com) is a growing community of developers who are using the API and 
+We're working hard at Veeqo to make developing on top of our API the best experience possible.
+[Developer Central](https://developer.veeqo.com) has access to all of the resources you'll need, and the
+[Developer Forum](https://developer-forum.veeqo.com) is a growing community of developers who are using the API and
 building on the Veeqo platform.
 
 ## Getting Started
@@ -31,14 +31,14 @@ building on the Veeqo platform.
 Follow the simple list below to get up and running with the Veeqo API.
 
 1. Get a Veeqo Account
-    * Register for a [Veeqo developer account](https://goo.gl/forms/mmGTgzadLvQVS6ml2)
+    * Register for a [Veeqo developer account](https://forms.gle/df3Dm41GPq3XekbZ7)
 2. Register Your Application
     * Set up some [API Authentication](#introduction/authentication) for your app
 3. Explore
     * Use the [API previewer](/#reference/orders) to see what each endpoint does
     * Download some [code samples](/#introduction/code-samples)
     * Use a tool like [Restlet](https://restlet.com/) or [Postman](https://www.getpostman.com/) to send some test requests
-4. Get Help and Learn More  
+4. Get Help and Learn More
     * Check out the [Developer Forum](https://developer-forum.veeqo.com)
 5. Build and test your app.
     * Do your thing the way you do best!
@@ -56,11 +56,11 @@ API keys are going to be depreciated in the future. If you are building a new ap
 
 ### OAuth
 
-A more detailed explanation of using OAuth will be coming here soon. 
+A more detailed explanation of using OAuth will be coming here soon.
 
 In the mean time, check out [this post](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95) on the Developer Forum
 
-### Get API Key 
+### Get API Key
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
@@ -72,8 +72,8 @@ Your API credentials will displayed on screen. Treat them like you would
 any other password, since whoever has access to the API Key has full API access
 to the Veeqo account.
 
-We have recently made a change that means that the API key will only be displayed 
-when it is first created to increase security. We recommend you create a new user 
+We have recently made a change that means that the API key will only be displayed
+when it is first created to increase security. We recommend you create a new user
 for each integration that needs an API key and store it securely.
 
 If you lose an API key, you can always create a new one.
@@ -91,7 +91,7 @@ curl --request GET \
   --header 'x-api-key: YOUR API KEY HERE'
 ```
 ## Veeqo Ruby Gem
-Our friends over at [COAX](https://coaxsoft.com/) have built a 
+Our friends over at [COAX](https://coaxsoft.com/) have built a
 [Ruby Gem](https://github.com/coaxsoft/veeqo_api_ruby)
 to integrate with our API. If you're building with ruby then this
 is an invaluable resource. They also have a load of examples on the
@@ -102,13 +102,13 @@ for the gem that are definately worth checking out.
 
 Learn from our examples.
 
-All of our examples live on the VeeqoAPI GitHub page. We're working hard to add 
+All of our examples live on the VeeqoAPI GitHub page. We're working hard to add
 more over the coming months.
 
 ### [Labels Downloader](https://github.com/VeeqoAPI/shipment-label-downloader)
 
 Sample application, written in Python, shows how to retrieve shipment lables
-from shipped Veeqo orders 
+from shipped Veeqo orders
 
 ### [Products Catalog](https://github.com/VeeqoAPI/products-list)
 
@@ -117,9 +117,9 @@ displaying products from Veeqo account
 
 ### [Dashboard](https://github.com/VeeqoAPI/dashboard)
 
-Written in PHP and based on the same CURL script as the Products Catalog, 
+Written in PHP and based on the same CURL script as the Products Catalog,
 this live example displays a simple dashboard of orders from today and yesterday.
-Similar to the way the mobile app dashboard works. 
+Similar to the way the mobile app dashboard works.
 
 The live example can be [found here.](https://veeqo-dashboard.herokuapp.com/)
 
