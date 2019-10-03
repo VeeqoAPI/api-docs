@@ -114,7 +114,6 @@ Resources related to the purchase orders in the API.
                                     {
                                         "allocated_stock_level": 1,
                                         "available_stock_level": 4,
-                                        "id": 1209224,
                                         "incoming_stock_level": 0,
                                         "infinite": false,
                                         "location": null,
