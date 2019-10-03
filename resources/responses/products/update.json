@@ -99,7 +99,6 @@
       },
       "stock_entries": [
         {
-          "id": 14723018,
           "sellable_id": 14144703,
           "warehouse_id": 22668,
           "infinite": false,
@@ -218,7 +217,6 @@
       },
       "stock_entries": [
         {
-          "id": 14723019,
           "sellable_id": 14144702,
           "warehouse_id": 22668,
           "infinite": false,

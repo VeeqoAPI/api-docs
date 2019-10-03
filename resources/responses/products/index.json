@@ -100,7 +100,6 @@
         },
         "stock_entries": [
           {
-            "id": 14723018,
             "sellable_id": 14144703,
             "warehouse_id": 22668,
             "infinite": false,
@@ -219,7 +218,6 @@
         },
         "stock_entries": [
           {
-            "id": 14723019,
             "sellable_id": 14144702,
             "warehouse_id": 22668,
             "infinite": false,
@@ -396,7 +394,6 @@
         },
         "stock_entries": [
           {
-            "id": 14346411,
             "sellable_id": 13847534,
             "warehouse_id": 22668,
             "infinite": false,
@@ -523,7 +520,6 @@
         },
         "stock_entries": [
           {
-            "id": 11435171,
             "sellable_id": 11022902,
             "warehouse_id": 22668,
             "infinite": false,
@@ -708,7 +704,6 @@
         },
         "stock_entries": [
           {
-            "id": 11435164,
             "sellable_id": 11022899,
             "warehouse_id": 22668,
             "infinite": false,
@@ -849,7 +844,6 @@
         },
         "stock_entries": [
           {
-            "id": 10866773,
             "sellable_id": 10673078,
             "warehouse_id": 22668,
             "infinite": false,
@@ -1026,7 +1020,6 @@
         },
         "stock_entries": [
           {
-            "id": 10836718,
             "sellable_id": 10646643,
             "warehouse_id": 22668,
             "infinite": false,
@@ -1203,7 +1196,6 @@
         },
         "stock_entries": [
           {
-            "id": 10836716,
             "sellable_id": 10646641,
             "warehouse_id": 22668,
             "infinite": false,
@@ -1322,7 +1314,6 @@
         },
         "stock_entries": [
           {
-            "id": 10836717,
             "sellable_id": 10646642,
             "warehouse_id": 22668,
             "infinite": false,
@@ -1441,7 +1432,6 @@
         },
         "stock_entries": [
           {
-            "id": 10836715,
             "sellable_id": 10646640,
             "warehouse_id": 22668,
             "infinite": false,

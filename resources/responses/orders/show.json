@@ -334,7 +334,6 @@
             },
             "stock_entries": [
               {
-                "id": 14346411,
                 "sellable_id": 13847534,
                 "warehouse_id": 12345,
                 "infinite": false,
@@ -546,7 +545,6 @@
         },
         "stock_entries": [
           {
-            "id": 15171456,
             "sellable_id": 14358568,
             "warehouse_id": 12345,
             "infinite": false,
@@ -714,7 +712,6 @@
         },
         "stock_entries": [
           {
-            "id": 14346411,
             "sellable_id": 13847534,
             "warehouse_id": 12345,
             "infinite": false,

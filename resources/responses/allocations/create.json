@@ -101,7 +101,6 @@
               {
                 "allocated_stock_level": 2,
                 "available_stock_level": 4,
-                "id": 1209222,
                 "incoming_stock_level": 0,
                 "infinite": false,
                 "location": null,
@@ -472,7 +471,6 @@
           {
             "allocated_stock_level": 2,
             "available_stock_level": 4,
-            "id": 1209222,
             "incoming_stock_level": 0,
             "infinite": false,
             "location": null,
