@@ -31,7 +31,7 @@ building on the Veeqo platform.
 Follow the simple list below to get up and running with the Veeqo API.
 
 1. Get a Veeqo Account
-    * Register for a [Veeqo developer account](https://forms.gle/df3Dm41GPq3XekbZ7)
+    * Register for a [Veeqo developer account](https://app.veeqo.com/register)
 2. Register Your Application
     * Set up some [API Authentication](#introduction/authentication) for your app
 3. Explore
