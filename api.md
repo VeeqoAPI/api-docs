@@ -11,12 +11,8 @@ anything you can do in the Veeqo Web App using the programming language of your 
 Our API is based on RESTful principles, using predictable and explorable URLs, HTTP requests and JSON responses.
 
 There are two ways of authenticating your app with Veeqo:
-
-1. [OAuth2](https://oauth.net/2/) authentication.
-2. Legacy API Keys.
-
-API keys are going to be depreciated at some point as we believe OAuth is the better option. There is more information
-on this in the [Authentication](/#introduction/authentication) section below.
+1. [OAuth2](https://oauth.net/2/) authentication
+2. API keys
 
 
 ## [Developer Central](https://developer.veeqo.com)
@@ -52,15 +48,18 @@ Authentication is required for your apps in order for them to access data in Vee
 1. OAuth
 2. API keys
 
-API keys are going to be depreciated in the future. If you are building a new application, please use OAuth. A guide on getting set up with OAuth can be found on the [Developer Forum](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95).
 
-### OAuth
+### Authenticating using OAuth
+
+We recommend using OAuth authentication if your application is for public use by other Veeqo users. If your application is for internal use only then you are still able to use OAuth authentication, however the API key authentication may be preferable.
 
 A more detailed explanation of using OAuth will be coming here soon.
 
-In the mean time, check out [this post](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95) on the Developer Forum
+Check out [this post](https://developer-forum.veeqo.com/t/veeqo-now-supports-oauth/95) on the Developer Forum for getting this set up.
 
-### Get API Key
+### Authenticating using API keys
+
+We recommend using API key based authentication only if your application is considered private and for your use only. If you intend to create a public application for any Veeqo user to authenticate with then please use OAuth based authentication instead.
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
