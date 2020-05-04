@@ -98,6 +98,11 @@ is an invaluable resource. They also have a load of examples on the
 [GitHub](https://github.com/coaxsoft/veeqo_api_ruby/tree/master/examples)
 for the gem that are definately worth checking out.
 
+## Limits
+The API has requests rate limits per key/token powered by a [Leacky Bucket algorithm](https://en.wikipedia.org/wiki/Leaky_bucket). If requests come too frequently, they are queued in a bucket. If the queue reaches the bucket limit, the API responds with HTTP 429 error.
+
+Current limit is **5 requests per second** with a bucket size **up to 100** requests.
+
 ## Code Samples
 
 Learn from our examples.
