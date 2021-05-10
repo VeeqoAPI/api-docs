@@ -29,7 +29,7 @@ You can view our Shipping API Documentation [here](https://developer.veeqo.com/d
 ## [Developer Central](https://developer.veeqo.com)
 
 
-We're working hard at Veeqo to make your developing experience when building on top of our API the best it can be. We have therefore created [Developer Central](https://developer.veeqo.com) which has access to all of the resources you'll need. 
+We're working hard at Veeqo to make your developing experience when building on top of our API the best it can be. We have therefore created [Developer Central](https://developer.veeqo.com) which has access to all of the resources you'll need.
 
 We also have a [Developer Forum](https://developer-forum.veeqo.com) so if you get stuck you can get answers to your queries from our team or our growing developer community.
 
@@ -84,23 +84,23 @@ We recommend using OAuth2 if your application is for public use by all Veeqo use
 
 4. Authorizing the user
     * Again Aaron Parecki's [guide](https://aaronparecki.com/oauth-2-simplified/#authorization) has a really useful section on setting up user authorization.
-    * You need to redirect the user to the authorize URL on the page that they are redirected from e.g: https://api.veeqo.com/oauth/authorize?client_id=4f8a5d37071f0955e3c8a3dcbf3ff0b53c0699d2085cc6b01707fb3eb9912652&redirect_uri=http%3A%2F%2Fexample.com%2Ftest_oauth_callback&response_type=code&scope= 2
-    * The user will then confirm authorization of the app
+    * Within your application, you need to redirect the user to the authorize URL on app.veeqo.com. For example: `https://app.veeqo.com/oauth/authorize?client_id=4f8a5d37071f0955e3c8a3dcbf3ff0b53c0699d2085cc6b01707fb3eb9912652&redirect_uri=http%3A%2F%2Fexample.com%2Ftest_oauth_callback&response_type=code&scope=`
+    * The user will then confirm authorization of the app and be redirected back to your application
 
 5. Get authorization code
-    * The authorization code is returned in the code parameter of the redirect uri 
+    * The authorization code is returned in the code parameter of the redirect uri
     e.g. http://example.com/test_oauth_callback?code=acc2658ced4f9eea257c9da72acea1c97f9e1b1db2118b565355532af13591d7
-    * this code lasts only 10 minutes
+    * note: this code lasts only 10 minutes
 
 6. Make a request for the permanent token
-    * Make a request to https://api.veeqo.com/oauth/token using client id, client secret, temporary code, e.g: 
+    * Make a request to https://api.veeqo.com/oauth/token using client id, client secret, temporary code, e.g:
 
     Request URL: /oauth/token
 
     Method: POST
 
     * Parameters:
-      
+
       - **grant_type**: authorization_code
       - **redirect_uri**: http://example.com/test_oauth_callback 5
       - **client id**: 4f8a5d37071f0955e3c8a3dcbf3ff0b53c0699d2085cc6b01707fb3eb9912652
@@ -135,7 +135,7 @@ We recommend using OAuth2 if your application is for public use by all Veeqo use
 
 1. Login into your [Veeqo account](https://app.veeqo.com/login)
 2. Navigate to [Employees page](https://app.veeqo.com/employees)
-3. Click on your user or create a **+ New Employee** 
+3. Click on your user or create a **+ New Employee**
   If you have multiple users we recommend creating a New Employee for each user as it makes it easier track application activity
 4. Click **Refresh API Key**
 5. Your API Key will be generated and stored in Veeqo should you ever need to refer back to it
