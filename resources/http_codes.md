@@ -36,6 +36,13 @@ __Description:__ The resource that you attempted to access could not be found. T
 
 __Action Required:__ Check that the endpoint you're attempting to access actually exists, and ensure that all of the IDs you pass in the attributes of the request body can be found in the attached account.
 
+###Code: 429
+__Meaning:__ Limits Reached
+
+__Description:__ The API request limit has been reached. The current limit is 5 requests per second with a bucket size up to 100 requests.
+
+__Action Required:__ Handle your requests with the API limit in mind.
+
 ###Code: 500
 __Meaning:__ Internal Server Error
 
