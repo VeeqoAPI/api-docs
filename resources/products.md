@@ -209,6 +209,18 @@ Resources related to the products in the API.
     + Body
 
         {
-            "id": 135497,
+            "name": "Some Awesome Property"
+        }
+    
+    + Response 201 (application/json)
+
+    + Headers
+    
+            X-Runtime: 0.0123
+                
+    + Body
+    
+        {
+            "id": 135498,
             "name": "Some Awesome Property"
         }
