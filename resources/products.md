@@ -212,7 +212,7 @@ Resources related to the products in the API.
             "name": "Some Awesome Property"
         }
     
-    + Response 201 (application/json)
++ Response 201 (application/json)
 
     + Headers
     
