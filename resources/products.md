@@ -98,6 +98,7 @@ Resources related to the products in the API.
         x-api-key: 123
 
     + Body
+
          {
            "product": {
              "title": "Golden Retriever Dog - TitleUpdate"
@@ -144,3 +145,70 @@ Resources related to the products in the API.
 ### Delete [DELETE]
 
 + Response 204
+
+## Product Properties [/products/{product_id}/product_property_specifics/{property_id}]
+
++ Parameters
+    + product_id: `132663` (integer, required) - ID of the Product
+    + property_id: `24352077` (integer, optional) - ID of the Property
+
+### View Properties [GET]
+
++ Response 200 (application/json)
+
+    + Body
+    
+        {
+            "id": 24352077,
+            "product_property_id": 132663,
+            "product_property_name": "Colour",
+            "value": "Blue"
+        }
+
+### Update Property Detail [PUT]
+
++ Request To update product properties. `property_id` will be required. If updates don't take effect, this is because the `product_property_name` does not exist. (application/json)
+
+    + Headers
+
+        x-api-key: 123
+
+    + Body
+
+        {
+            "product_property_name": "Size",
+            "value": "13"
+        }
+
++ Response 200 (application/json)
+    
+    + Body
+    
+        {
+            "product_property_name": "Size",
+            "value": "13"
+        }
+
+### Remove Property From Product [DELETE]
+
++ Response 204
+
+## Create Properties [/product_properties]
+
+### Create a New Property [POST]
+
++ Attributes
+    + name: `Some Awesome Property` (string, required)
+
++ Request (application/json)
+
+    + Headers
+
+            x-api-key: 123
+
+    + Body
+
+        {
+            "id": 135497,
+            "name": "Some Awesome Property"
+        }
