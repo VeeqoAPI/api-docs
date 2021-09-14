@@ -39,7 +39,7 @@ __Action Required:__ Check that the endpoint you're attempting to access actuall
 ###Code: 429
 __Meaning:__ Limits Reached
 
-__Description:__ The API request limit has been reached. The current limit is 5 requests per second with a bucket size up to 100 requests.
+__Description:__ The API request limit has been reached. The current limit is 5 requests per second with a bucket size up to 100 requests (this limit may differ if you have agreed enterprise limits)
 
 __Action Required:__ Handle your requests with the API limit in mind.
 
