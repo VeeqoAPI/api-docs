@@ -40,8 +40,8 @@ We also have a [Developer Forum](https://developer-forum.veeqo.com) so if you ge
 Follow these steps below to get up and running.
 
 1. Get a Veeqo Account
-    * Register for a [Veeqo developer account](https://app.veeqo.com/register)
-    This will take you through the same steps as a new store owner to register for a 14 day free trial of Veeqo - this trial can easily be extended by emailing api-support@veeqo.com
+    * Register for a [Veeqo developer account](https://veeqo.com)
+    This will take you through the same steps as a new store owner to register for a 14 day free trial of Veeqo - this trial can easily be extended by emailing helpme@support.veeqo.com
 2. Set up your Authentication
     * Follow our [API Authentication](#introduction/authentication) instructions
 3. Explore
@@ -73,11 +73,11 @@ We recommend using OAuth2 if your application is for public use by all Veeqo use
 1. Set up your redirect_uri
     * This is the URL that the user will be redirected to after authentication. If you're new to OAuth, Aaron Parecki has a really great [guide](https://aaronparecki.com/oauth-2-simplified/#creating-an-app) for getting started.
 
-2. Send your details to api-support@veeqo.com
+2. Send your details to helpme@support.veeqo.com
     * Please provide us with:
       - The name of your applications
       - Your redirect/callback URI
-    * Email the details to api-support@veeqo.com
+    * Email the details to helpme@support.veeqo.com
 
 3. We register your application with OAuth
     * Once registered we will provide you with your client_id and client_secret by email
