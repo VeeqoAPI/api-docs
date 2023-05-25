@@ -41,7 +41,7 @@ Follow these steps below to get up and running.
 
 1. Get a Veeqo Account
     * Register for a [Veeqo developer account](https://veeqo.com)
-    This will take you through the same steps as a new store owner to register for a 14 day free trial of Veeqo - this trial can easily be extended by emailing helpme@support.veeqo.com
+    This will take you through the same steps as a new store owner to register for a free Veeqo account
 2. Set up your Authentication
     * Follow our [API Authentication](#introduction/authentication) instructions
 3. Explore
