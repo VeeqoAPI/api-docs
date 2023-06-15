@@ -168,11 +168,6 @@ Learn from our examples.
 All of our examples live on the VeeqoAPI GitHub page. We're working hard to add
 more over the coming months.
 
-### [Labels Downloader](https://github.com/VeeqoAPI/shipment-label-downloader)
-
-Sample application, written in Python, shows how to retrieve shipment lables
-from shipped Veeqo orders
-
 ### [Products Catalog](https://github.com/VeeqoAPI/products-list)
 
 This example, written in PHP, illustrates how to build simple catalog
