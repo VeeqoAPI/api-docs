@@ -51,14 +51,14 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
 ### Create a Shipment [POST]
 
 + Attributes
-    + shipment:
-        + tracking_number_attributes (object, optional) - Only required if you have a value for tracking_number
-            + tracking_number: `12345679ABC` (string, required) - Tracking number for the shipment (if applicable)
-        + carrier_id: `3` (number, required) - Veeqo ID of the carrier for the shipment
-        + notify_customer: `false` (boolean, required) - Whether to notify the buyer via email from Veeqo
-        + update_remote_order: `false` (boolean, required) - Whether to update the remote store (if using an integrated solution such as Amazon)
-    + allocation_id: `1` (number, required) - ID of the allocation
-    + order_id: `1` (number, required) - ID of the order
+  + shipment:
+    + tracking_number_attributes (object, optional) - Only required if you have a value for tracking_number
+      + tracking_number: `12345679ABC` (string, required) - Tracking number for the shipment (if applicable)
+    + carrier_id: `3` (number, required) - Veeqo ID of the carrier for the shipment
+    + notify_customer: `false` (boolean, required) - Whether to notify the buyer via email from Veeqo
+    + update_remote_order: `false` (boolean, required) - Whether to update the remote store (if using an integrated solution such as Amazon)
+  + allocation_id: `1` (number, required) - ID of the allocation
+  + order_id: `1` (number, required) - ID of the order
 
 + Request (application/json)
 
@@ -77,7 +77,7 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
 
 + Response 201 (application/json)
 
-    + Body
+  + Body
 
             {
                 "id": 3,
@@ -96,13 +96,18 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
                 "carrier": {
                     "id": 3,
                     "name": "Other"
+                },
+                "outbound_label_charges": {
+                    "unit": "USD",
+                    "value": 5.52
                 }
+
             }
 
 ## Shipment [/shipments/{id}]
 
 + Parameters
-    + id (integer)
+  + id (integer)
 
 ### Delete [DELETE]
 
