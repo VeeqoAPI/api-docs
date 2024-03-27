@@ -97,6 +97,11 @@ Here is a list of the supported carriers and their IDs. If the carrier you inten
                     "id": 3,
                     "name": "Other"
                 }
+                "outbound_label_charges": {
+                    "unit": "USD",
+                    "value": 5.52
+                }
+
             }
 
 ## Shipment [/shipments/{id}]
