@@ -187,7 +187,7 @@ If you get stuck at any stage in your project you can find answers on our [Devel
 
 ## Feedback
 
-We LOVE ❤️ feedback! It helps us to improve developer experience and make your job easier! If you have any feedback regarding our API, documentation or Developer Central please leave a comment on the forum or email [api-support@veeqo.com](mailto:api-support@veeqo.co)
+We LOVE ❤️ feedback! It helps us to improve developer experience and make your job easier! If you have any feedback regarding our API, documentation or Developer Central please leave a comment on the forum or email [helpme@support.veeqo.com](mailto:helpme@support.veeqo.com)
 
 
 :[HTTP Codes](resources/http_codes.md)
