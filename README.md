@@ -5,7 +5,7 @@
 This repository contains the API Blueprint for the [Veeqo API][]. 
 The documentation for the API lives on the [Docs][] page.
 We're currently in the process of updating the documentation. 
-Updates will be posted on the [Forum][] and be visible though the commits here.
+Updates will be visible though the commits here.
 
 ## Requirements
 
@@ -35,4 +35,3 @@ Replace `321` with real API key which you can get by going to <https://login.api
 
 [Veeqo API]: https://developer.veeqo.com
 [Docs]: https://developer.veeqo.com/docs
-[Forum]: http://developer-forum.veeqo.com
