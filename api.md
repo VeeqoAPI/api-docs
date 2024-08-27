@@ -31,8 +31,6 @@ You can view our Shipping API Documentation [here](https://developer.veeqo.com/d
 
 We're working hard at Veeqo to make your developing experience when building on top of our API the best it can be. We have therefore created [Developer Central](https://developer.veeqo.com) which has access to all of the resources you'll need.
 
-We also have a [Developer Forum](https://developer-forum.veeqo.com) so if you get stuck you can get answers to your queries from our team or our growing developer community.
-
 
 ## Getting Started
 
@@ -53,7 +51,7 @@ Follow these steps below to get up and running.
 5. Build and test your app.
     * Build the worlds best Veeqo integration
 6. Get Help
-    * Stuck? Check out our [Developer Forum](https://developer-forum.veeqo.com)
+    * Stuck? Please email [helpme@support.veeqo.com](mailto:helpme@support.veeqo.com);
 
 
 ## Authentication
@@ -183,11 +181,11 @@ The live example can be [found here.](https://veeqo-dashboard.herokuapp.com/)
 
 ## Support
 
-If you get stuck at any stage in your project you can find answers on our [Developer Forum](https://developer-forum.veeqo.com/). Our forum is monitored by one of our friendly team and we aim to respond to all posts within 48-hours.
+If you get stuck at any stage in your project please email [helpme@support.veeqo.com](mailto:helpme@support.veeqo.com);
 
 ## Feedback
 
-We LOVE ❤️ feedback! It helps us to improve developer experience and make your job easier! If you have any feedback regarding our API, documentation or Developer Central please leave a comment on the forum or email [helpme@support.veeqo.com](mailto:helpme@support.veeqo.com)
+We LOVE ❤️ feedback! It helps us to improve developer experience and make your job easier! If you have any feedback regarding our API, documentation or Developer Central please email [helpme@support.veeqo.com](mailto:helpme@support.veeqo.com)
 
 
 :[HTTP Codes](resources/http_codes.md)
