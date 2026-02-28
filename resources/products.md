@@ -11,6 +11,7 @@ Resources related to the products in the API.
     + warehouse_id: `12345` (integer, optional) - Restrict results to products with stock in specific warehouse
     + created_at_min: `2016-03-01 11:10:01` (string, optional) - Show entities created after date (format: YYYY-MM-DD HH:MM:SS)
     + updated_at_min: `2016-03-01 11:10:01` (string, optional) - Show entities updated after date (format: YYYY-MM-DD HH:MM:SS)
+    + tags: `Give+your+tag+a+name` (string, optional) - Restrict results to products with a tag of the name provided
     + page_size: `25` (integer, optional) - Amount of results per page
         + Default: `12`
     + page: `1` (integer, optional) - Page to show
